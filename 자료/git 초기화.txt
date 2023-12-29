@@ -1,0 +1,6 @@
+git config --global user.email "" 엔터
+git config --global user.name "" 엔터
+git config --list
+
+
+내정보 없앨때
