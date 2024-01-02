@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        text-align: right;
+        background-color: #003f85;
+        height: 30px;
+        padding-right: 400px;
+      }
+      header ul {
+        list-style: none;
+      }
+      header ul li {
+        display: inline;
+      }
+      header ul li a {
+        text-decoration: none;
+        color: #fff;
+      }
+      header ul li a::after {
+        content: " / ";
+      }
+      header ul li:last-child a::after {
+        content: "";
+      }
+      .main {
+        text-align: center;
+        height: 50px;
+        padding: 50px;
+      }
+      .navi {
+        text-align: center;
+        width: 837px;
+        height: 21px;
+        margin: 0 auto;
+      }
+      .navi ul {
+      }
+      .navi ul li {
+        display: inline;
+        padding: 0px 34px;
+      }
+      .navi ul li:first-child {
+        padding-left: 0px;
+      }
+      .navi ul li:last-child {
+        padding-right: 0px;
+      }
+      .banner1 {
+        margin-top: 30px;
+      }
+      .banner1 p {
+        margin: 0 auto;
+        width: 837px;
+        height: 150px;
+        background-image: url(images/birkenstock/images/visual.png);
+      }
+      .icon {
+        list-style: none;
+        width: 837px;
+        margin: 0 auto;
+      }
+      .icon li {
+        list-style: none;
+        width: 109px;
+        height: 109px;
+        float: left;
+        margin: 50px;
+      }
+      .icon li:first-child {
+        background-image: url(images/birkenstock/images/icon1.png);
+      }
+      .icon li:nth-child(2) {
+        background-image: url(images/birkenstock/images/icon2.png);
+      }
+      .icon li:nth-child(3) {
+        background-image: url(images/birkenstock/images/icon3.png);
+      }
+      .icon li:last-child {
+        background-image: url(images/birkenstock/images/icon4.png);
+      }
+      .sub {
+        clear: left;
+        width: calc(393px * 3);
+        margin: 0 auto;
+      }
+      .sub li {
+        margin: 50px 0px;
+        list-style: none;
+        float: left;
+      }
+      .sub li img {
+        width: 393px;
+      }
+      .sub2 {
+        clear: left;
+        width: calc(313px + 237px + 442px + 237px);
+        margin: 0 auto;
+      }
+      .sub2 li {
+        list-style: none;
+        float: left;
+        text-align: right;
+        margin-bottom: 100px;
+      }
+      .sub2 li:first-child {
+        width: 313px;
+        height: 313px;
+        background-color: #f2f2f2;
+      }
+      .sub2 li h4 {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        padding-right: 20px;
+      }
+      .sub2 li h5 {
+        padding-right: 20px;
+      }
+      footer {
+        clear: left;
+        background-color: #022857;
+        height: 100px;
+        margin-bottom: 200px;
+        display: inline block;
+      }
+      footer ul li:first-child {
+        height: 25px;
+        width: 247px;
+        line-height: 25px;
+      }
+      footer ul li:nth-child(2) {
+        text-align: center;
+        color: #fff;
+        line-height: 40px;
+        font-style: italic;
+      }
+      footer ul li ul.sns {
+        list-style: none;
+      }
+      footer ul li ul.sns li {
+        float: right;
+        margin: -10px 30px;
+      }
+      footer ul li ul.sns li:first-child {
+        margin-right: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <ul>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">장바구니</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+    </header>
+    <div>
+      <p class="main">
+        <img src="images/birkenstock/images/logo1.png" alt="메인" />
+      </p>
+    </div>
+    <div class="navi">
+      <ul>
+        <li>ABOUT</li>
+        <li>COLLECTION</li>
+        <li>MEN</li>
+        <li>WOMEN</li>
+        <li>BOYS</li>
+        <li>GIRLS</li>
+        <li>SERVICES</li>
+      </ul>
+    </div>
+    <div class="banner1">
+      <p></p>
+    </div>
+    <ul class="icon">
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+    <ul class="sub">
+      <li><img src="images/birkenstock/images/sub1.png" alt="" /></li>
+      <li><img src="images/birkenstock/images/sub2.png" alt="" /></li>
+      <li><img src="images/birkenstock/images/sub3.png" alt="" /></li>
+    </ul>
+    <ul class="sub2">
+      <li>
+        <h4>
+          건강한 신발을 만드는<br />
+          버켄스탁과 함께 <br />
+          다양한 나를 만나보세요.
+        </h4>
+        <h5>지금 만나러가기</h5>
+      </li>
+      <li><img src="images/birkenstock/images/sub4.png" alt="" /></li>
+      <li><img src="images/birkenstock/images/sub5.png" alt="" /></li>
+      <li><img src="images/birkenstock/images/sub6.png" alt="" /></li>
+    </ul>
+    <footer>
+      <ul>
+        <li><img src="images/birkenstock/images/logo2.png" alt="#" /></li>
+        <li>copyright 2016(c) BIRKENSTOCK all right reserved.</li>
+        <li>
+          <ul class="sns">
+            <li><img src="images/birkenstock/images/sns1.png" alt="" /></li>
+            <li><img src="images/birkenstock/images/sns2.png" alt="" /></li>
+            <li><img src="images/birkenstock/images/sns3.png" alt="" /></li>
+            <li><img src="images/birkenstock/images/sns4.png" alt="" /></li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
