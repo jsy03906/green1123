@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>간단한 로그인 페이지</title>
+    <style>
+      /* 간단한 스타일링을 위한 CSS */
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      #login-box {
+        width: 300px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="login-box">
+      <h2>로그인</h2>
+      <input type="text" id="username" placeholder="사용자 이름" /><br /><br />
+      <input type="password" id="password" placeholder="비밀번호" /><br /><br />
+      <button onclick="login()">로그인</button>
+      <p id="login-message"></p>
+    </div>
+
+    <script>
+      function login() {
+        // 간단한 예제이기 때문에 실제 서버 요청은 하지 않고 하드코딩된 값으로 로그인을 체크합니다.
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // 실제로는 이 정보를 서버로 보내어 로그인 처리를 해야 합니다.
+        if (username === "user" && password === "password") {
+          document.getElementById("login-message").innerText = "로그인 성공!";
+        } else {
+          document.getElementById("login-message").innerText =
+            "로그인 실패. 사용자 이름 또는 비밀번호를 확인하세요.";
+        }
+      }
+    </script>
+  </body>
+</html>
