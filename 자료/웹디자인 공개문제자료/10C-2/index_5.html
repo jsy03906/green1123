@@ -18,7 +18,7 @@
         color: #333;
       }
       .wrap {
-        width: 1000px;
+        width: 100%;
         overflow: hidden;
       }
       .wrap > div {
@@ -26,7 +26,11 @@
       }
       .wrap > div.left {
         width: 200px;
-        height: 650px;
+      }
+      .wrap > div.right {
+        width: calc(100% - 200px);
+        height: 920px;
+        background: #ddd;
       }
       .wrap > div .logo {
         height: 100px;
@@ -38,12 +42,14 @@
         text-align: center;
       }
       .wrap > div .menu > ul {
-        position: relative;
+        /* position: relative; */
       }
       .wrap > div .menu > ul > li {
+        height: 40px;
         line-height: 40px;
         border: 1px solid #333;
         border-top: none;
+        box-sizing: border-box;
       }
       .wrap > div .menu > ul > li a {
         display: block;
@@ -61,22 +67,32 @@
         color: #000;
       }
       .wrap > div .menu > ul > li .sub a {
-        line-height: 30px;
+        line-height: 40px;
         color: #fff;
       }
-      .wrap > div .menu > ul > li .sub {
+      .wrap > div .lnb {
         position: absolute;
-        width: 100%;
-        top: -30px;
-        left: 180px;
-        height: 0;
-        transition: height 0.5s;
-        opacity: 0;
+        width: calc(100% - 200px);
+        left: 190px;
+        top: 120px;
+        height: 160px;
         background: #000;
+        z-index: 1;
       }
-      .wrap > div .menu > ul > li:hover .sub {
-        height: 250px;
-        opacity: 1;
+
+      .wrap > div .lnb > ul > li {
+        float: left;
+        width: 200px;
+        line-height: 40px;
+        text-align: center;
+      }
+      .wrap > div .lnb > ul > li .sub li a {
+        display: block;
+        color: #fff;
+      }
+      .wrap > div .lnb > ul > li .sub li a:hover {
+        background: #fff;
+        color: #000;
       }
     </style>
   </head>
@@ -86,8 +102,15 @@
         <div class="logo"></div>
         <div class="menu">
           <ul>
+            <li><a href="#">축제소개</a></li>
+            <li><a href="#">행사안내</a></li>
+            <li><a href="#">홍보마당</a></li>
+            <li><a href="#">참여마당</a></li>
+          </ul>
+        </div>
+        <div class="lnb">
+          <ul>
             <li>
-              <a href="#">축제소개</a>
               <ul class="sub">
                 <li><a href="#">초대의 글</a></li>
                 <li><a href="#">축제개요</a></li>
@@ -96,7 +119,6 @@
               </ul>
             </li>
             <li>
-              <a href="#">행사안내</a>
               <ul class="sub">
                 <li><a href="#">셔틀버스안내</a></li>
                 <li><a href="#">행사안내</a></li>
@@ -105,7 +127,6 @@
               </ul>
             </li>
             <li>
-              <a href="#">홍보마당</a>
               <ul class="sub">
                 <li><a href="#">축제소식</a></li>
                 <li><a href="#">보도자료</a></li>
@@ -113,7 +134,6 @@
               </ul>
             </li>
             <li>
-              <a href="#">참여마당</a>
               <ul class="sub">
                 <li><a href="#">참가후기</a></li>
                 <li><a href="#">연꽃갤러리</a></li>

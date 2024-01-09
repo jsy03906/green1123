@@ -18,7 +18,7 @@
         color: #333;
       }
       .wrap {
-        width: 1000px;
+        width: 100%;
         overflow: hidden;
       }
       .wrap > div {
@@ -26,7 +26,11 @@
       }
       .wrap > div.left {
         width: 200px;
-        height: 650px;
+      }
+      .wrap > div.right {
+        width: calc(100% - 200px);
+        height: 920px;
+        background: #ddd;
       }
       .wrap > div .logo {
         height: 100px;
@@ -38,12 +42,14 @@
         text-align: center;
       }
       .wrap > div .menu > ul {
-        position: relative;
+        /* position: relative; */
       }
       .wrap > div .menu > ul > li {
+        height: 40px;
         line-height: 40px;
         border: 1px solid #333;
         border-top: none;
+        box-sizing: border-box;
       }
       .wrap > div .menu > ul > li a {
         display: block;
@@ -61,22 +67,39 @@
         color: #000;
       }
       .wrap > div .menu > ul > li .sub a {
-        line-height: 30px;
+        line-height: 40px;
         color: #fff;
       }
       .wrap > div .menu > ul > li .sub {
         position: absolute;
-        width: 100%;
-        top: -30px;
-        left: 180px;
-        height: 0;
-        transition: height 0.5s;
-        opacity: 0;
+        width: calc(100% - 200px);
+        left: 190px;
+        height: 40px;
+        /* opacity: 0; */
+        display: none;
         background: #000;
+        z-index: 1;
+        /* transition: all 0.5s; */
       }
-      .wrap > div .menu > ul > li:hover .sub {
-        height: 250px;
-        opacity: 1;
+      .wrap > div .menu > ul:hover .sub {
+        /* opacity: 1; */
+        display: block;
+      }
+      .wrap > div .menu > ul .sub li {
+        float: left;
+        width: 200px;
+      }
+      .wrap > div .menu > ul > li:nth-child(1) .sub {
+        top: 120px;
+      }
+      .wrap > div .menu > ul > li:nth-child(2) .sub {
+        top: 160px;
+      }
+      .wrap > div .menu > ul > li:nth-child(3) .sub {
+        top: 200px;
+      }
+      .wrap > div .menu > ul > li:nth-child(4) .sub {
+        top: 240px;
       }
     </style>
   </head>
