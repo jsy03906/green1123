@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 공지사항시작 */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      .wrap {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      header {
+        height: 100px;
+      }
+      .slide {
+        height: 300px;
+      }
+      .contents {
+        height: 200px;
+        /* background: #ccc; */
+      }
+      .contents > div {
+        position: relative;
+        float: left;
+        width: 33.333%;
+        padding: 10px 0;
+        box-sizing: border-box;
+      }
+      .contents > div.notice p {
+        position: absolute;
+        height: 30px;
+        width: 100px;
+        background: #fff;
+        border: 1px solid #333;
+        text-align: center;
+        line-height: 30px;
+        border-bottom: none;
+        left: 30px;
+      }
+      .contents > div.notice table {
+        position: relative;
+        top: 30px;
+        table-layout: fixed;
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid #333;
+      }
+      .contents > div.notice table td {
+        padding: 2px 5px;
+        font-size: 16px;
+      }
+      .contents > div.notice table td:first-child {
+        width: 70%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .contents > div.notice table td:last-child {
+        width: 30px;
+        text-align: right;
+      }
+      footer {
+        height: 100px;
+      }
+      /* 공지사항 끝 */
+
+      /* 갤러리 시작 */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      .wrap {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      header {
+        height: 100px;
+      }
+      .slide {
+        height: 300px;
+      }
+      .contents {
+        height: 200px;
+        /* background: #ccc; */
+      }
+      .contents > div {
+        position: relative;
+        float: left;
+        width: 33.333%;
+        padding: 10px 0;
+        box-sizing: border-box;
+      }
+      .contents > div.notice p {
+        position: absolute;
+        height: 30px;
+        width: 100px;
+        background: #fff;
+        border: 1px solid #333;
+        text-align: center;
+        line-height: 30px;
+        border-bottom: none;
+        left: 30px;
+      }
+      .contents > div.notice table {
+        position: relative;
+        top: 30px;
+        table-layout: fixed;
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid #333;
+      }
+      .contents > div.notice table td {
+        padding: 2px 5px;
+        font-size: 16px;
+      }
+      .contents > div.notice table td:first-child {
+        width: 70%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .contents > div.notice table td:last-child {
+        width: 30px;
+        text-align: right;
+      }
+      footer {
+        height: 100px;
+      }
+      .square {
+        width: 100px; /* 네모박스의 가로 길이 */
+        height: 100px; /* 네모박스의 세로 길이 */
+        background-color: #fff; /* 네모박스의 배경색 */
+        border: 1px solid;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- 공지사항시작 -->
+    <div class="wrap">
+      <header>
+        <div class="logo"></div>
+        <div class="menu"></div>
+      </header>
+      <div class="slide"></div>
+      <div class="contents">
+        <div class="notice">
+          <p>공지사항</p>
+          <table>
+            <tr>
+              <td>
+                <a href="#">서울특별시약사회와 함께하는 의료비지원사업</a>
+              </td>
+              <td>2019.10.04</td>
+            </tr>
+            <tr>
+              <td><a href="#">개그맨 김재우 부부와 함께하는 '카레한상'</a></td>
+              <td>2019.09.25</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">MBC 장애인식개선 <우리동네 피터팬> 방송 안내</a>
+              </td>
+              <td>2018.09.10</td>
+            </tr>
+            <tr>
+              <td><a href="#">2019 국내선물보내기 캠페인 결과보고</a></td>
+              <td>2019.10.21</td>
+            </tr>
+            <tr>
+              <td><a href="#">2019년 서울형 뉴딜일자리 참여자 모집</a></td>
+              <td>2019.10.10</td>
+            </tr>
+            <tr>
+              <td><a href="#">2019년 제5회 에너지나눔 대축제</a></td>
+              <td>2019.09.28</td>
+            </tr>
+          </table>
+        </div>
+        <div class="gallery"></div>
+        <div class="banner"></div>
+      </div>
+      <footer>
+        <div class="logo"></div>
+        <div class="copyright"></div>
+        <div class="family"></div>
+      </footer>
+    </div>
+    <!-- 공지사항끝 -->
+    
+    <!-- 갤러리시작 -->
+    <div class="wrap">
+        <header>
+          <div class="logo"></div>
+          <div class="menu"></div>
+        </header>
+        <div class="slide"></div>
+        <div class="contents">
+          <div class="notice">
+            <p>갤러리</p>
+            <table>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+         </div>
+         <div class="square"></div>
+     </body>
+</html>

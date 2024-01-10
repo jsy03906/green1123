@@ -25,8 +25,12 @@ header {
 header > div {
   float: left;
 }
+header .logo img {
+  vertical-align: middle;
+}
 header .logo {
   width: 200px;
+  line-height: 100px;
 }
 header .menu {
   width: 1000px;
@@ -186,9 +190,10 @@ footer > div {
 }
 footer > div.logo {
   width: 200px;
-  list-style: 100px;
+  line-height: 100px;
 }
-footer > div.logo {
+footer > div.logo img {
+  width: 200px;
   vertical-align: middle;
 }
 footer > div.Copyright {
@@ -198,7 +203,7 @@ footer > div.Copyright {
   font-size: 14px;
   text-align: center;
 }
-footer > div.Copyright {
+footer > div.Copyright div {
   position: absolute;
   width: 100%;
   left: 50%;
