@@ -32,14 +32,16 @@
         margin: 50px auto;
         text-align: center;
         font-family: "Nanum Pen Script", cursive;
-        background: url(images/banner_arrow.png) -100% 80% no-repeat,
+        background: url(images/banner_logo.png) 50% 50% no-repeat,
           url(images/banner_photo.png) -300px 10px no-repeat,
           url(images/banner_09.png) 20px -400px no-repeat,
           url(images/banner_bg.png);
-        transition: 1s;
+        animation: ani 1s ease-in 1s forwards;
       }
-      a.banner:hover {
-        background-position: 50% 80%, -40px 10px, 20px -30px, 0 0;
+      @keyframes ani {
+        to {
+          background-position: 50% 80%, -40px 10px, 20px -30px, 0 0;
+        }
       }
       a.banner span {
         position: absolute;
@@ -49,27 +51,32 @@
         font-size: 40px;
         color: dodgerblue;
         opacity: 0;
-        transition: 1s;
+        animation: text 1s ease-in 1s forwards;
       }
-      a.banner:hover span {
-        opacity: 1;
+      @keyframes text {
+        to {
+          opacity: 1;
+        }
       }
       a.banner img {
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        transition: 1s;
+        left: 300px;
+        top: 80%;
+        opacity: 0;
+        animation: logoAni 1s ease-in 1s infinite;
       }
-      a.banner:hover img {
-        left: 650px;
+      @keyframes logoAni {
+        to {
+          left: 350px;
+          opacity: 1;
+        }
       }
     </style>
   </head>
   <body>
     <div>
       <a href="#" class="banner">
-        <img src="images/banner_logo.png" alt="logo" />
+        <img src="images/banner_arrow.png" alt="logo" />
         <span>Animation Banner Design<br />웹폰트를 활용한 스타일</span>
       </a>
     </div>
