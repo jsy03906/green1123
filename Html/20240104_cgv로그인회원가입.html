@@ -75,7 +75,7 @@
         text-align: center;
         float: left;
       }
-    .container {
+      .container {
        display: flex;
        width: 1025px;
        margin: 0 auto;
@@ -83,25 +83,35 @@
       }
 
      .event-text {
-      margin-right: 20px; /* 텍스트와 이미지 사이의 간격을 조절할 수 있습니다. */
+      margin-right: 15px; /* 텍스트와 이미지 사이의 간격을 조절할 수 있습니다. */
+     
       }
 
      .event-image {
       width: 341px; /* 이미지의 너비를 조절할 수 있습니다. */
       cursor: pointer; /* 포인터 커서를 사용하여 클릭 가능함을 표시합니다. */
-     }
-     .gonggi {display: flex;
-       width: 1025px;
-       margin: 0 auto;
-       padding-top: 30px;
       }
+     .gonggi {width: 1025px;
+              float: right;
+             }
+     .gon {text-decoration: none;
+           float: left;
+           color: #101010;
+           }
+     .item {
+      width: 400px;
+      float: right;     
+      line-height: 20px;
+      }
+     .gon .item {
+      float: left;}
 
   
    
 /* 스타일을 직접 지정하는 경우 */
-  .custom-size {
-      font-size: 25px; /* 원하는 크기로 조절 */
-    }
+   /* .custom-size {
+      font-size: 25px; 원하는 크기로 조절
+    } */
     body {
       margin: 0;
       padding: 0;
@@ -109,7 +119,6 @@
       display: flex;
       flex-direction: column;
     }
-
     .rectangle-box {
       width: 1025px;
       height: 50px;
@@ -124,8 +133,6 @@
       left: 50%; /* 왼쪽으로부터 50% 위치로 설정합니다. */
       transform: translateX(-50%); /* 가운데 정렬을 위해 50%만큼 좌측으로 이동시킵니다. */
     }
-
-    /* 다른 필요한 스타일을 추가할 수 있습니다. */
     </style>
   </head>
   <body>
@@ -182,42 +189,41 @@
           <img src="images/CGV/image/img04.png" alt="04" />
         </p>
       </div>
-      <div>
       <div class="container">
-        <div class="event-text"><h2>이벤트</h2></div>
-        <img src="images/CGV/image/banner.jpg" alt="event" class="event-image">
-      </div>
-      <div class="gonggi">
-        <ul>
-          <li>
-            <h2>공지사항</h2>
-            <div class="item">
-              공지사항 제목이 들어갑니다.
-              &nbsp;&nbsp;<span>2017-08-07</span>
-          </li>
-          <li>
-              공지사항 제목이 들어갑니다.
-              &nbsp;&nbsp;<span>2017-08-07</span>
-          </li>
-          <li>
-              공지사항 제목이 들어갑니다.
-              &nbsp;&nbsp;<span>2017-08-07</span>
-          </li>
-          <li>
-              공지사항 제목이 들어갑니다.
-              &nbsp;&nbsp;<span>2017-08-07</span>
-          </li>
-          <li>
-              공지사항 제목이 들어갑니다.
-              &nbsp;&nbsp;<span>2017-08-07</span>
-          </li>
-        </ul>
-        </div>
         <div>
-        <div class="rectangle-box">
+          <div class="event-text"><h2>이벤트</h2></div>
+          <div><img src="images/CGV/image/banner.jpg" alt="event" class="event-image"></div>
+        </div>
+      
+      <div class="gonggi">
+        <div class="gon"><h2>공지사항</h2></div>
+            <table class="item">
+              <tr>
+                <td>공지사항 제목이 들어갑니다.</td>
+                <td>2017-08-07</td>
+                </tr>
+              <tr>
+                <td>공지사항 제목이 들어갑니다.</td>
+                <td>2017-08-07</td>
+                </tr>
+              <tr>
+                <td>공지사항 제목이 들어갑니다.</td>
+                <td>2017-08-07</td>
+                </tr>
+              <tr>
+                <td>공지사항 제목이 들어갑니다.</td>
+                <td>2017-08-07</td>
+                </tr>
+              <tr>
+                <td>공지사항 제목이 들어갑니다.</td>
+                <td>2017-08-07</td>
+                </tr>
+     
+       </div>
+  <body>
+    <div class="rectangle-box">
     <span>All Copyrights Reserved</span>
-    </div>
-    </div>
+  </div>
     </header>
   </body>
 </html>

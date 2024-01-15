@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+.clearfix::before,
+.clearfix::before {
+  content: "";
+  display: block;
+}
+.clearfix::before {
+  clear: both;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: Arial, "맑은 고딕", serif;
+}
+header {
+  background: url(images/color_topbg.jpg);
+  height: 128px;
+}
+header .top {
+  width: 999px;
+  margin: 0 auto;
+}
+header .top .logo {
+  text-align: center;
+}
+header .top ul li {
+  float: left;
+}
+header nav {
+  width: 999px;
+  margin: o auto;
+}
+header nav ul li {
+  float: left;
+}
+header nav ul a::after {
+  content: images;
+}
+
+
+
+
+
+
+.visual .top li {
+  display: none;
+}
+#bag1:checked ~ .visual .top {}
+
+
+
+.visual .bottom li label {
+  display: block;
+  width: 100px;
+  height: 100%;
+  cursor: pointer;
+}
+.visual .bottom li:hover {
+  background: #ccc;
+}
+#bag1:checked ~ .visual .bottom li :first-child,
