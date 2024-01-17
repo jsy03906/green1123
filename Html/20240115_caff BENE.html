@@ -18,29 +18,42 @@
         text-decoration: none;
       }
       .top {
-        background: red;
-        height: 25px;
+        margin-top: 25px;
+        background: #fff;
+        height: 15px;
       }
       .topMenu {
-        width: 1025px;
+        width: 1200px;
         margin: 0 auto;
-        overflow: hidden;
+        font-size: 10px;
+        content: "|";
       }
       .topMenu ul {
         float: right;
       }
       .top .topMenu li {
+        margin-right: 1px;
         float: left;
       }
       .top .topMenu li a {
-        color: #fff;
+        color: rgb(3, 3, 3);
+        padding: px;
+        padding-left: 0px;
+     }
+     .top .topMenu li a:after {
+        content: "|";
+        color: #ccc;
         padding: 0 10px;
-        padding-left: 30px;
       }
+      .top .topMenu li:last-child a:after {
+        content: "";
+      }
+ 
       #menu {
-        width: 1025px;
+        width: 1200px;
+        text-align: center;
         margin: 0 auto;
-        height: 80px;
+        height: 50px;
       }
       #menu p {
         float: left;
@@ -52,178 +65,129 @@
         float: left;
       }
       #menu .menu li a {
-        color: red;
-        font-size: 20px;
-        line-height: 80px;
-        padding-left: 50px;
+        color: rgb(75, 74, 74);
+        font-size: 12px;
+        line-height: 60px;
+        padding-left: 85px;
+     }
+      #menu .menu li:last-child a{
+                padding-left: 0;
+                vertical-align: middle;
+                line-height: 30px;
       }
-      .visual {
-        width: 1025px;
+      .text {font-family: Arial, sans-serif;
+            font-size: 12px;
+            color: black;
+      }
+      .rounded-rectangle {
+            /* float: left; */
+            width: 80px;
+            height: 30px;
+            background-color: rgb(4, 185, 161);
+            border-radius: 5px;
+            margin-left: 100px;
+            margin-top: 15px;
+        }
+        
+      .Main1 {
+        width: 1200px;
         margin: 0 auto;
       }
-      .rounded-image {
-        border-radius: 30px;
-      }
-      .img {
-        width: 1025px;
-        margin: 0 auto;
-        padding-top: 30px;
-        letter-spacing: 110px;
-      }
-      .img ul li {
-        width: calc(100% / 4);
-        text-align: center;
-        float: left;
-      }
-      .container {
-       display: flex;
-       width: 1025px;
-       margin: 0 auto;
-       padding-top: 30px;
-      }
-
-     .event-text {
-      margin-right: 15px; /* 텍스트와 이미지 사이의 간격을 조절할 수 있습니다. */
-     
-      }
-
-     .event-image {
-      width: 341px; /* 이미지의 너비를 조절할 수 있습니다. */
-      cursor: pointer; /* 포인터 커서를 사용하여 클릭 가능함을 표시합니다. */
-      }
-     .gonggi {width: 1025px;
-              float: right;
-             }
-     .gon {text-decoration: none;
-           float: left;
-           color: #101010;
-           }
-     .item {
-      width: 400px;
-      float: right;     
-      line-height: 20px;
-      }
-     .gon .item {
-      float: left;}
-
-  
-   
-/* 스타일을 직접 지정하는 경우 */
-   /* .custom-size {
-      font-size: 25px; 원하는 크기로 조절
-    } */
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh; /* 최소 높이를 화면 높이만큼 설정합니다. */
-      display: flex;
-      flex-direction: column;
-    }
-    .rectangle-box {
-      width: 1025px;
-      height: 50px;
-      margin: auto;
-      background-color: #babc1f;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 10px;
-      position: fixed;
-      bottom: 0;
-      left: 50%; /* 왼쪽으로부터 50% 위치로 설정합니다. */
-      transform: translateX(-50%); /* 가운데 정렬을 위해 50%만큼 좌측으로 이동시킵니다. */
-    }
-    </style>
+      .Main1 img {width: 100%;}
+ </style>
   </head>
   <body>
     <header>
       <div class="top">
         <div class="topMenu">
           <ul>
-            <li><a href="">로그인</a></li>
-            <li><a href="">회원가입</a></li>
-            <li><a href="">English</a></li>
-          </ul>
+            <li><a href=""><b>KR</b></a></li>
+            <li><a href="">EN</a></li></ul>
         </div>
       </div>
       <div id="menu">
         <p class="logo">
-          <img src="images/CGV/image//logo.gif" alt="logo" />
+          <img src="images/logo.png" alt="logo" />
         </p>
 
         <div class="menu">
           <ul>
             <li>
-              <a href=""><strong>영화예매</strong></a>
+              <a href=""><strong>CAFFEBENE</strong></a>
+              <!-- <ul class="sub">
+                <li><a href="#">브랜드 스토리</a></li>
+                <li><a href="#">베네켓 스토리</a></li>
+                <li><a href="#">카페베네 원두</a></li>
+                <li><a href="#">카페베네 소식</a></li>
+                <li><a href="#">매거진</a></li>
+                </ul> -->
             </li>
             <li>
-              <a href=""><strong>신작개봉</strong></a>
+              <a href=""><strong>MENU</strong></a>
+              <!-- <ul class="sub">
+                <li><a href="#">신메뉴</a></li>
+                <li><a href="#">커피</a></li>
+                <li><a href="#">음료</a></li>
+                <li><a href="#">푸드</a></li>
+                <li><a href="#">MD상품</a></li>
+                <li><a href="#">Retail</a></li>
+                </ul> -->
             </li>
             <li>
-              <a href=""><strong>이벤트</strong></a>
+              <a href=""><strong>STORE</strong></a>
+              <!-- <ul class="sub">
+                <li><a href="#">국내</a></li>
+                <li><a href="#">해외</a></li>
+             </ul> -->
             </li>
             <li>
-              <a href=""><strong>공지사항</strong></a>
+              <a href=""><strong>MEMBERSHIP</strong></a>
+              <!-- <ul class="sub">
+                <li><a href="#">등급&혜택</a></li>
+                <li><a href="#">가입방법안내</a></li>
+                <li><a href="#">서비스</a></li>
+                <li><a href="#">FAQ</a></li>
+             </ul> -->
             </li>
             <li>
-              <a href=""><strong>CGV매점</strong></a>
+              <a href=""><strong>GLOBAL</strong></a>
+              <!-- <ul class="sub">
+                <li><a href="#">해외매장안내</a></li>
+                <li><a href="#">해외사업소개</a></li>
+                <li><a href="#">해외가맹&유통문의</a></li>
+            </ul> -->
+            </li>
+            <li>
+              <a href=""><strong>CONTENS</strong></a>
+              <!-- <ul class="sub">
+                <li><a href="#">커피</a></li>
+                <li><a href="#">우리동네</a></li>
+                <li><a href="#">사람들</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">매장</a></li>
+            </ul> -->
+            </li>
+            <li>
+                <div class="rounded-rectangle">
+                    <a href="#">가맹문의</a></div>
             </li>
           </ul>
+          
+
         </div>
       </div>
-      <div>
-        <p class="visual">
+
+     <div class="Main1">
+        <p class="CAFF BENE">
           <img
-            src="images/CGV/image/visual.jpg"
+            src="images/CAFF BENE Main1.jpg"
             class="rounded-image"
-            alt="visual"
+            alt="Main1"
           />
         </p>
       </div>
-      <div>
-      <div>
-        <p class="img">
-          <img src="images/CGV/image/img01.png" alt="01" />
-          <img src="images/CGV/image/img02.png" alt="02" />
-          <img src="images/CGV/image/img03.png" alt="03" />
-          <img src="images/CGV/image/img04.png" alt="04" />
-        </p>
-      </div>
-      <div class="container">
-        <div>
-          <div class="event-text"><h2>이벤트</h2></div>
-          <div><img src="images/CGV/image/banner.jpg" alt="event" class="event-image"></div>
-        </div>
-      
-      <div class="gonggi">
-        <div class="gon"><h2>공지사항</h2></div>
-            <table class="item">
-              <tr>
-                <td>공지사항 제목이 들어갑니다.</td>
-                <td>2017-08-07</td>
-                </tr>
-              <tr>
-                <td>공지사항 제목이 들어갑니다.</td>
-                <td>2017-08-07</td>
-                </tr>
-              <tr>
-                <td>공지사항 제목이 들어갑니다.</td>
-                <td>2017-08-07</td>
-                </tr>
-              <tr>
-                <td>공지사항 제목이 들어갑니다.</td>
-                <td>2017-08-07</td>
-                </tr>
-              <tr>
-                <td>공지사항 제목이 들어갑니다.</td>
-                <td>2017-08-07</td>
-                </tr>
-     
-       </div>
-  <body>
-    <div class="rectangle-box">
-    <span>All Copyrights Reserved</span>
-  </div>
+   <body>
     </header>
   </body>
 </html>
