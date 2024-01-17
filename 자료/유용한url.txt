@@ -132,8 +132,8 @@ https://validator.w3.org/
 figma.com
 
 
-
-
+svg---->Take encoded
+https://yoksel.github.io/url-encoder/
 
 
 
