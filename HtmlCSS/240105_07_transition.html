@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        width: 10px;
+        height: 50px;
+        margin: 10px;
+        background-color: #ccc;
+        white-space: nowrap;
+        /* 줄바꿈 못하는 속성 */
+      }
+      div:hover p {
+        width: 500px;
+      }
+      p:nth-child(1) {
+        transition-timing-function: ease;
+      }
+      p:nth-child(2) {
+        transition-timing-function: ease-in;
+      }
+      p:nth-child(3) {
+        transition-timing-function: ease-out;
+      }
+      p:nth-child(4) {
+        transition-timing-function: ease;
+      }
+    </style>
+  </head>
+  <body>
+    <p>default</p>
+    <p>ease</p>
+    <p>ease-in</p>
+    <p>ease-out</p>
+    <p>ease-in</p>
+    <p>ease-in</p>
+  </body>
+</html>

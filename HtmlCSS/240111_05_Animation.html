@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        /* position: relative; */
+        width: 100px;
+        height: 100px;
+        background: #ccc;
+        animation-name: ani;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes ani {
+        0% {
+          /* left: 0px; */
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(500px, 0) rotate(-180deg);
+          /* left: 500px;
+          top: 0; */
+          /* transform: rotate(-180deg); */
+        }
+        50% {
+          transform: translate(500px, 500px);
+          /* top: 500px;
+          left: 500px;
+          transform: rotate(0deg); */
+        }
+        75% {
+          transform: translate(0, 500px);
+          /* top: 500px;
+          left: 0; */
+        }
+        100% {
+          transform: translate(0, 0);
+          /* left: 0;
+          top: 0; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
