@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 100px); /* 2개의 열을 가지도록 설정 */
+        gap: 10px; /* 각 그리드 아이템 사이의 간격 설정 */
+        justify-items: center; /* 그리드 아이템을 수평 중앙으로 정렬 */
+        align-items: center; /* 그리드 아이템을 수직 중앙으로 정렬 */
+        width: 220px; /* 전체 그리드 컨테이너의 너비 설정 */
+      }
+      .grid-item {
+        width: 100px;
+        height: 100px;
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- 그리드 아이템을 4개 추가 -->
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+    </div>
+  </body>
+</html>

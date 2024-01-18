@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 100px;
+        grid-template-rows: 100px;
+        gap: 10px;
+        float: left; /* 왼쪽으로 띄워 가로 정렬 */
+        margin-right: 20px; /* 각 그리드 컨테이너 사이 간격을 위한 우측 마진 설정 */
+      }
+      .container {
+        height: 100px;
+        width: 100px;
+        border: 1px solid;
+        position: relative;
+        background: #ddd;
+      }
+      .overlay-box {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+        background: #aaa;
+        display: flex;
+        justify-content: center;
+        color: white;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="container">
+        <!-- 기본 100x100px 박스 -->
+        <div class="overlay-box">기본박스1</div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="container">
+        <!-- 기본 100x100px 박스 -->
+        <div class="overlay-box"><b>내용</b></div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="container">
+        <!-- 기본 100x100px 박스 -->
+        <div class="overlay-box">기본박스3</div>
+      </div>
+    </div>
+  </body>
+</html>
