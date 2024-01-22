@@ -25,7 +25,7 @@
         text-align: left;
         line-height: 90px;
         height: 49px;
-        margin-top: 10px;
+        margin-top: 0px;
       }
       .topMenu {
         width: 1025px;
@@ -41,8 +41,16 @@
       .top .topMenu li a {
         color: #fff;
         padding: 10px;
-        padding-left: 30px;
-        line-height: 40px;
+        padding-left: .1px;
+        line-height: 43px;
+      }
+      .top .topMenu li a:after {
+        content: "|";
+        color: rgba(252, 245, 245, 0.932);
+        padding: 0 10px;
+      }
+      .top .topMenu li:last-child a:after {
+        content: "";
       }
       
       #menu {
@@ -65,19 +73,21 @@
         line-height: 80px;
         padding-left: 50px;
       }
-
-      .visual {
-        width: 1025px;
+      .bngroup {
+        width: 1045px;
         margin: 0 auto;
+        height: 500px;
+        word-spacing: -20px;
+        background-color: #ddd;
       }
       .rounded-image {
         border-radius: 30px;
       }
       .img {
-        width: 1025px;
+        width: 1045px;
         margin: 0 auto;
         padding-top: 30px;
-        letter-spacing: 110px;
+        letter-spacing: 10px;
       }
       .img ul li {
         width: calc(100% / 4);
@@ -86,7 +96,7 @@
       }
       .container {
        display: flex;
-       width: 1025px;
+       width: 1045px;
        margin: 0 auto;
        padding-top: 30px;
       }
@@ -102,22 +112,19 @@
 
 
       
-     .gonggi {width: 500px;
+     .gonggi  {width: 500px;
               float: right;
               margin-left: 70px;
              }
-     .gon {text-decoration: none;
-           float: left;
-           color: #101010;
-       
-          }
+     .speedad_logo.jpg {text-decoration: none;
+           float: left;}
      .item {
       font-size: 20px;
       width: 390px;
       float: right;     
       line-height: 35px;
       }
-     .gon .item {
+     .speedad_logo.jpg .item {
       float: left;}
 
   
@@ -134,7 +141,7 @@
       flex-direction: column;
     }
     .rectangle-box {
-      width: 1025px;
+      width: 1045px;
       height: 50px;
       margin: auto;
       background-color: #babc1f;
@@ -164,80 +171,54 @@
       </div>
       <div id="menu">
         <p class="logo">
-          <img src="images/CGV/imagespeedad_logo.jpg" alt="logo" />
+          <img src="images/스피드ad/images/speedad_logo.jpg" alt="logo" />
         </p>
 
         <div class="menu">
           <ul>
             <li>
-              <a href=""><strong>영화예매</strong></a>
+              <a href="">쉬운주문/빠른 제작 진행/품질보증!</a>
             </li>
-            <li>
-              <a href=""><strong>신작개봉</strong></a>
-            </li>
-            <li>
-              <a href=""><strong>이벤트</strong></a>
-            </li>
-            <li>
-              <a href=""><strong>공지사항</strong></a>
-            </li>
-            <li>
-              <a href=""><strong>CGV매점</strong></a>
-            </li>
-          </ul>
+        </ul>
         </div>
       </div>
       <div>
-        <p class="visual">
-          <img
-            src="images/CGV/image/visual.jpg"
-            class="rounded-image"
-            alt="visual"
-          />
+        <p class="bngroup">
+          <img src="images/스피드ad/images/top_bngroup_bn01.jpg" alt="bn01" />
+          <img src="images/스피드ad/images/top_bngroup_bn02.jpg" alt="bn02" />
+          <img src="images/스피드ad/images/top_bngroup_bn03.jpg" alt="bn03" />
+          <img src="images/스피드ad/images/top_bngroup_bn04.jpg" alt="bn04" />
+          <img src="images/스피드ad/images/top_bngroup_bn05.jpg" alt="bn05" />
+          <img src="images/스피드ad/images/top_bngroup_bn06.jpg" alt="bn06" />
+          <!-- <img src="images/스피드ad/images/top_img_slidebn1-1.jpg" alt="slidebn1-1" /> -->
+         </p>
+       <p class="bngroup2">
+          <img src="images/스피드ad/images/top_bngroup_bn07.jpg" alt="bn07" />
+          <img src="images/스피드ad/images/top_bngroup_bn08.jpg" alt="bn08" />
+          <img src="images/스피드ad/images/top_bngroup_bn09.jpg" alt="bn09" />
+          <img src="images/스피드ad/images/top_bngroup_bn10.jpg" alt="bn10" />
+          <img src="images/스피드ad/images/top_bngroup_bn11.jpg" alt="bn11" />
+          <img src="images/스피드ad/images/top_bngroup_bn12.jpg" alt="bn12" />
         </p>
       </div>
-      <div>
+         <div>
+        <p class="img">
+          <img src="images/스피드ad/images/speedad_logo.jpg" alt="logo" />
+          <img src="images/스피드ad/images/" alt="" />
+    </p>
+      </div>
       <div>
         <p class="img">
-          <img src="images/CGV/image/img01.png" alt="01" />
-          <img src="images/CGV/image/img02.png" alt="02" />
-          <img src="images/CGV/image/img03.png" alt="03" />
-          <img src="images/CGV/image/img04.png" alt="04" />
-        </p>
+         <img src="images/스피드ad/images/today_bg.gif" alt="today_bg.gif" />
+    </p>
       </div>
-      <div class="container">
-        <div>
-          <div class="event-text"><h2>이벤트</h2></div>
-          <div><img src="images/CGV/image/banner.jpg" alt="event" class="event-image"></div>
-        </div>
-      
-      <div class="gonggi">
-        <div class="gon"><h2>공지사항</h2></div>
-            <table class="item">
-              <tr>
-                <td>공지사항 제목이 들어갑니다.</td>
-                <td>2017-08-07</td>
-                </tr>
-              <tr>
-                <td>공지사항 제목이 들어갑니다.</td>
-                <td>2017-08-07</td>
-                </tr>
-              <tr>
-                <td>공지사항 제목이 들어갑니다.</td>
-                <td>2017-08-07</td>
-                </tr>
-              <tr>
-                <td>공지사항 제목이 들어갑니다.</td>
-                <td>2017-08-07</td>
-                </tr>
-              <tr>
-                <td>공지사항 제목이 들어갑니다.</td>
-                <td>2017-08-07</td>
-                </tr>
+
+       
+
      </div>
   <body>
     <div class="rectangle-box">
-    <span>All Copyrights Reserved</span>
+    <span>Copyright © 스피드애드. All rights reserved.</span>
   </div>
     </header>
   </body>
