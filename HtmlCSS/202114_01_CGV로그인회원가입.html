@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,6 +21,12 @@
         background: red;
         height: 25px;
       }
+      .logo {
+        text-align: left;
+        line-height: 90px;
+        height: 49px;
+        margin-top: 10px;
+      }
       .topMenu {
         width: 1025px;
         margin: 0 auto;
@@ -37,6 +43,7 @@
         padding: 0 10px;
         padding-left: 30px;
       }
+      
       #menu {
         width: 1025px;
         margin: 0 auto;
@@ -57,6 +64,7 @@
         line-height: 80px;
         padding-left: 50px;
       }
+
       .visual {
         width: 1025px;
         margin: 0 auto;
@@ -81,27 +89,32 @@
        margin: 0 auto;
        padding-top: 30px;
       }
-
-     .event-text {
-      margin-right: 20px; /* 텍스트와 이미지 사이의 간격을 조절할 수 있습니다. */
-      writing-mode: horizontal-tb; /* 텍스트를 가로로 표시 */
-      }
-
-     .event-image {
+      .container >div >div{float: left;}
+      .container >div >div:last-child{width: 341px;}
+    .event-text {
+      margin-right:10px; /* 텍스트와 이미지 사이의 간격을 조절할 수 있습니다. */
+      width: 100px;
+     }
+    .event-image {
       width: 341px; /* 이미지의 너비를 조절할 수 있습니다. */
-      cursor: pointer; /* 포인터 커서를 사용하여 클릭 가능함을 표시합니다. */
-      }
-     .gonggi {width: 1025px;
+      cursor: pointer; /* 포인터 커서를 사용하여 클릭 가능함을 표시합니다. */}
+
+
+      
+     .gonggi {width: 500px;
               float: right;
+              margin-left: 70px;
              }
      .gon {text-decoration: none;
            float: left;
            color: #101010;
-           }
+       
+          }
      .item {
-      width: 550px;
+      font-size: 20px;
+      width: 390px;
       float: right;     
-      line-height: 20px;
+      line-height: 35px;
       }
      .gon .item {
       float: left;}
@@ -190,35 +203,35 @@
         </p>
       </div>
       <div class="container">
-        <div class="event-text"><h2>이벤트</h2></div>
-        <img src="images/CGV/image/banner.jpg" alt="event" class="event-image">
+        <div>
+          <div class="event-text"><h2>이벤트</h2></div>
+          <div><img src="images/CGV/image/banner.jpg" alt="event" class="event-image"></div>
+        </div>
       
       <div class="gonggi">
-        <ul>
-          <li>
-            <div class="gon"><h2>공지사항</h2></div>
-            <div class="item">
-             <li>공지사항 제목이 들어갑니다.
-              &nbsp;&nbsp;<span>2017-08-07</span> 
-          </li>
-          <li>
-              공지사항 제목이 들어갑니다.
-              &nbsp;&nbsp;<span>2017-08-07</span>
-          </li>
-          <li>
-              공지사항 제목이 들어갑니다.
-              &nbsp;&nbsp;<span>2017-08-07</span>
-          </li>
-          <li>
-              공지사항 제목이 들어갑니다.
-              &nbsp;&nbsp;<span>2017-08-07</span>
-          </li>
-          <li>
-              공지사항 제목이 들어갑니다.
-              &nbsp;&nbsp;<span>2017-08-07</span>
-          </li>
-        </ul>
-        </div>
+        <div class="gon"><h2>공지사항</h2></div>
+            <table class="item">
+              <tr>
+                <td>공지사항 제목이 들어갑니다.</td>
+                <td>2017-08-07</td>
+                </tr>
+              <tr>
+                <td>공지사항 제목이 들어갑니다.</td>
+                <td>2017-08-07</td>
+                </tr>
+              <tr>
+                <td>공지사항 제목이 들어갑니다.</td>
+                <td>2017-08-07</td>
+                </tr>
+              <tr>
+                <td>공지사항 제목이 들어갑니다.</td>
+                <td>2017-08-07</td>
+                </tr>
+              <tr>
+                <td>공지사항 제목이 들어갑니다.</td>
+                <td>2017-08-07</td>
+                </tr>
+     </div>
   <body>
     <div class="rectangle-box">
     <span>All Copyrights Reserved</span>
