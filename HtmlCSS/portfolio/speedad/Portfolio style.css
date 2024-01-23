@@ -14,12 +14,6 @@ a {
   background: #e53a47;
   height: 34px;
 }
-.logo {
-  text-align: left;
-  line-height: 90px;
-  height: 34px;
-  margin-top: 0px;
-}
 .topMenu {
   width: 1025px;
   font-size: 12px;
@@ -67,7 +61,7 @@ a {
 }
 
 .cycle-side-active {
-  position: fixed;
+  position: relative;
 }
 .cycle {
   position: absolute;
@@ -124,15 +118,57 @@ a {
   height: 380px;
   width: 1045px;
 }
-.img {
+.speedsearch {
   width: 1045px;
   margin: 0 auto;
   padding-top: 30px;
-  letter-spacing: 10px;
+  padding-bottom: 95px;
 }
-.img ul li {
-  width: calc(100% / 4);
+.speedsearch ul li {
+  width: 1045px;
+  height: 134px;
+  width: calc(100% / 8);
   text-align: center;
+  float: left;
+}
+.logo {
+  width: 1045px;
+  vertical-align: middle;
+}
+.search {
+  width: 1045px;
+  padding: 2px 0px 0px;
+  line-height: 0.01px;
+}
+.link {
+}
+.line {
+  border: 0.1px solid #e53a47;
+}
+.position {
+  width: 100px;
+  border: 1px solid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  margin-left: 80px;
+  text-align: center;
+  font-family: Arial, 맑은 고딕, sans-serif;
+  font-size: 15px;
+  color: #000;
+}
+#category .position > ul > li > a {
+  display: block;
+  line-height: 18px;
+  padding: 10px 15px;
+  letter-spacing: -1px;
+  color: #000;
+  font-size: 15px;
+  word-spacing: -1px;
+  text-decoration: none;
+  text-align: center;
+}
+.gif {
   float: left;
 }
 .container {
