@@ -20,6 +20,7 @@
         background: #aaa;
       }
       .list_man {
+        margin: 0 auto;
         padding-top: 50px;
         width: 80%;
         display: flex;
@@ -28,6 +29,7 @@
       }
       .list_man li {
         flex-basis: 18%;
+        margin-bottom: 1%;
         background: #fff;
       }
       @media screen and (max-width: 1024px) {
@@ -42,14 +44,12 @@
       @media screen and (max-width: 768px) {
         /* li 3개 */
         .list_man li {
-          margin: 1%;
           flex-basis: 31.333%;
         }
       }
       @media screen and (max-width: 500px) {
         /* li 2개 */
         .list_man li {
-          margin: 1%;
           flex-basis: 48%;
         }
       }
@@ -57,7 +57,7 @@
   </head>
   <body>
     <div id="box_a">
-      <ul class="flex">
+      <ul class="list_man">
         <li>a</li>
         <li>b</li>
         <li>c</li>

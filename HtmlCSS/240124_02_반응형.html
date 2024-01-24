@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,26 +25,36 @@
       }
       #wrap .main {
         display: flex;
+        flex-wrap: wrap;
       }
-
       #wrap .main .left {
         background: red;
         /* width: 300px; */
-        flex-basis: 380px;
+        flex-basis: 300px;
       }
       #wrap .main .center {
         background: yellow;
         /* flex-grow: 1; */
-        /* width: calc(100% ~ 600px); */
-        /* flex-basis: calc(100% ~600px); */
-        flex-basis: 380px;
+        /* width: calc(100% - 600px); */
+        flex-basis: calc(100% - 600px);
       }
       #wrap .main .right {
         background: blue;
         /* width: 300px; */
-        flex-basis: 760px;
+        flex-basis: 300px;
       }
-      @media only screen and (max-width: 760px) {
+      @media screen and (max-width: 768px) {
+        #wrap .main .left {
+          flex-basis: 50%;
+        }
+        #wrap .main .center {
+          flex-basis: 50%;
+        }
+        #wrap .main .right {
+          flex-basis: 100%;
+        }
+      }
+      @media screen and (max-width: 500px) {
         #wrap .main {
           display: block;
         }
@@ -52,14 +62,6 @@
           width: 100%;
         }
       }
-      /* @media only screen and (max-width: 500px) {
-        #wrap .main {
-          display: block;
-        }
-        #wrap .main > div {
-          width: 100%;
-        }
-      } */
     </style>
   </head>
   <body>

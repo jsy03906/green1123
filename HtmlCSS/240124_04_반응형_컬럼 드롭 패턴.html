@@ -9,62 +9,64 @@
         margin: 0;
         padding: 0;
       }
-      #warp {
+      #wrap {
         display: flex;
         flex-wrap: wrap;
       }
       #box_a {
-        width: 30%;
+        flex-basis: 30%;
         height: 400px;
         background: #aaa;
       }
       #box_b {
-        width: 50%;
+        flex-basis: 50%;
         height: 400px;
         background: #bbb;
       }
       #box_c {
-      flex-basis: 100%;
+        flex-basis: 20%;
+        height: 400px;
+        background: #ccc;
       }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1280px) {
         #box_a {
-          order: 1;}
-          #box_b {
-          order: 2;}
-          #box_c {
-          order: 3;}
+          order: 3;
+        }
+        #box_b {
+          order: 2;
+        }
+        #box_c {
+          order: 1;
+        }
+      }
       @media screen and (max-width: 1024px) {
         #box_b {
           flex-basis: 70%;
         }
         #box_c {
-          clear: left;
           flex-basis: 100%;
         }
       }
       @media screen and (max-width: 768px) {
         #box_a {
           flex-basis: 100%;
+          order: 1;
         }
         #box_b {
           flex-basis: 100%;
+          order: 2;
         }
-      }
-      @media screen and (max-width: 480px) {
-        #box_a {
-          flex-basis: 100%;
-        }
-        #box_b {
-          flex-basis: 100%;
+        #box_c {
+          order: 3;
         }
       }
     </style>
   </head>
   <body>
-    <warp>
-      <div id="box_a"></div>
-      <div id="box_b"></div>
-      <div id="box_c"></div>
-    </warp>
+    <div id="wrap">
+      <div id="box_a">1</div>
+      <div id="box_b">2</div>
+      <div id="box_c">3</div>
+    </div>
   </body>
 </html>
