@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Column Drop</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #warp {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #box_a {
+        width: 30%;
+        height: 400px;
+        background: #aaa;
+      }
+      #box_b {
+        width: 50%;
+        height: 400px;
+        background: #bbb;
+      }
+      #box_c {
+      flex-basis: 100%;
+      }
+      @media screen and (max-width: 768px) {
+        #box_a {
+          order: 1;}
+          #box_b {
+          order: 2;}
+          #box_c {
+          order: 3;}
+      @media screen and (max-width: 1024px) {
+        #box_b {
+          flex-basis: 70%;
+        }
+        #box_c {
+          clear: left;
+          flex-basis: 100%;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        #box_a {
+          flex-basis: 100%;
+        }
+        #box_b {
+          flex-basis: 100%;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        #box_a {
+          flex-basis: 100%;
+        }
+        #box_b {
+          flex-basis: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <warp>
+      <div id="box_a"></div>
+      <div id="box_b"></div>
+      <div id="box_c"></div>
+    </warp>
+  </body>
+</html>

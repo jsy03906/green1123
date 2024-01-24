@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Off Canvas</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+       display: flex;
+      }
+      #wowrap ul {
+       list-style: none;
+     
+      }
+      #wowrap li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #wowrap img {
+        margin-bottom: 10px; /* 이미지 아래 간격 조절 */
+      }
+      .text-color-2 {
+        color: #ff7548; /* 예시로 텍스트 색상을 지정 */
+      }
+      .h1 {
+        margin: 0;
+      }
+      @media screen and (max-width: 1024px) {
+        #wrap {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        #wrap_box {
+          position: absolute;
+          width: 150%;
+        }
+        #box_a {
+          width: 33.333%;
+        }
+        #box_b {
+          width: 33.334%;
+        }
+        #box_c {
+          width: 33.333%;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        #wrap_box {
+          width: 300%;
+          margin-left: -100%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <body>
+   <div class="container">
+      <div id="wowrap">
+        <ul>
+        <img src="images/section-box.png" alt="box_a" />
+        <li><img src="images/history-icon1.png" alt="icon1" /></li>
+        <li><p class="text-color-2">누적 거래액</p></li>
+        <li><h1>1,500억원+</h1></li>
+      </ul>
+      </div>
+      <div id="wowrap2">
+        <ul>
+          <li><img src="images/section-box.png" alt="box_b" /></li>
+          <li><img src="images/history-icon2.png" alt="history-icon2" /></li>
+          <p class="text-color-2">케어닥의 돌봄서비스를 사용한 고객 수</p>
+          <h1>20만명+</h1>
+        </ul>
+      </div>
+      <div id="wowrap3">
+        <ul>
+          <li><img src="images/section-box.png" alt="box_c" /></li>
+          <li><img src="images/history-icon3.png" alt="history-icon3" /></li>
+          <p class="text-color-2">케어닥과 함께한 케어코디 수</p>
+          <h1>7만명+</h1>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
