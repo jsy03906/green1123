@@ -1,0 +1,58 @@
+@charset "utf-8";
+@font-face {
+  font-family: NanumSquareRound;
+  src: url(../../webfonts/NanumSquareRoundOTFR.otf) format("opentype");
+}
+* {
+  margin: 0%;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+body {
+  font-family: Arial, Helvetica, Pretendard, sans-serif;
+}
+.ecoImages .ecoTitle {
+  font-weight: bold;
+}
+.top {
+  width: 100%;
+  min-width: 1420px;
+  max-width: 1919px
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#container-area .main .ecoArea .area .ecoImages {
+  display: grid;
+  margin: 80px auto 0;
+  max-width: 1420px;
+  color: #fff;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 87px;
+}
+.ecoImages {
+  width: 100%;
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 1280px) and (max-width: 1919px) {
+  #container-area.main .ecoArea .area .ecoImages a.imgBlock_01 {
+    margin-top: 138px;
+    max-width: 503px;
+    height: 680px; /* 또는 height: auto; 를 사용하여 이미지 비율을 유지하세요. */
+    background: url(../images/energy_1.jpg) center / cover no-repeat; /* background-size 속성 추가 */
+    grid-row: 1 / 3;
+  }
+}
+
