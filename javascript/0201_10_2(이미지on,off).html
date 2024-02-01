@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .image-container {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+      }
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        opacity: 0; /* Initially set opacity to 0 */
+        transition: opacity 1s ease-in-out; /* Add transition for fade effect */
+      }
+      .image-container img.on {
+        opacity: 1; /* Set opacity to 1 for visible state */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="images/photo1.jpg" alt="photo" class="on" />
+      <img src="images/photo2.jpg" alt="photo" />
+      <img src="images/photo3.jpg" alt="photo" />
+      <img src="images/photo4.jpg" alt="photo" />
+      <img src="images/photo5.jpg" alt="photo" />
+    </div>
+    <button id="showBtn">이미지 보이기</button>
+    <button id="hideBtn">이미지 숨기기</button>
+    <script>
+      var images = document.querySelectorAll(".image-container img");
+      var currentIndex = 0;
+      var interval;
+
+      document.getElementById("showBtn").onclick = function () {
+        clearInterval(interval); // Clear any existing interval to avoid conflicts
+        interval = setInterval(function () {
+          images.forEach(function (img) {
+            img.classList.remove("on");
+          });
+          images[currentIndex].classList.add("on");
+          currentIndex = (currentIndex + 1) % images.length;
+        }, 1000); // Change image every 1000ms (1 second)
+      };
+
+      document.getElementById("hideBtn").onclick = function () {
+        clearInterval(interval); // Clear the interval when hiding
+        images.forEach(function (img) {
+          img.classList.remove("on");
+        });
+      };
+    </script>
+  </body>
+</html>
