@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      document.title = "javascript";
+      //   document.getElementByld("demo").innerHTML = "변경전";
+      console.log("테스트1234+1234"); //문자데이터의 + 연산자 역할은 결합연산자
+      console.log(1234 + 1234); //숫자데이터의 + 연산자 역할은 덧셈연산자
+      console.log(1234 + "\n" + 1234);
+      //       그렇다면 역슬래시와 따옴표를 출력하려면 어떻게 해야할까?간단하게 정리하자면 역슬래시와 따옴표 앞에 역슬래시를 넣어주면 된다.ex) \' or \\이것을 이스케이프 시퀀스(Escape Sequence)라고 하는데 자바에서 역슬래시가 나오면 그 뒤에 있는 문자를 상황에 맞게 처리하는 것이다.이름만 들으면 생소하지만 개발하는 사람들은 아래와 같은 이스케이프 시퀀스를 본 적이 있을 것이다.ex) \n(줄바꿈), \r(줄의 맨처음으로), \t(탭)
+      // 출처: https://smile-place.tistory.com/entry/자바에서-역슬래시-따옴표-등-이스케이프-시퀀스-출력하기 [Smile Place:티스토리]
+      //       이런 종류도 모두 이스케이프 시퀀스이다.코드를 통해서 예를 들어보면 아래와 같다.
+      // System.out.println("백슬래시를 표현할 때는 \\ 이렇게, 따옴표를 표현할 때는 \' 이렇게 쓴다."); //출력 결과 : 백슬래시를 표현할 때는 \ 이렇게, 따옴표를 표현할 때는 ' 이렇게 쓴다.
+      // 출처: https://smile-place.tistory.com/entry/자바에서-역슬래시-따옴표-등-이스케이프-시퀀스-출력하기 [Smile Place:티스토리]
+      실제입력    실제출력
+        \\          \
+         \'         '
+         \"         "
+         \n        줄바꿈
+    </script>
+    <style>
+      #demo {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Demo JavaScript in Head</h2>
+    <p id="demo">A Paragraph</p>
+    <script>
+      document.getElementById("demo").innerHTML = "변경후";
+      document.getElementById("demo").style.color = "red";
+    </script>
+  </body>
+</html>
