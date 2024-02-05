@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 이 코드는 간단한 HTML과 CSS로 만들어진 탭 메뉴 예제입니다. 각 탭을 클릭하면 해당하는 내용이 나타나도록 구성되어 있습니다. 아래는 코드의 기능을 설명한 것입니다.
+
+HTML 구조:
+
+.btn: 탭들이 담겨 있는 부모 요소입니다.
+.btn p: 각 탭을 나타내는 <p> 요소들이 포함되어 있습니다.
+.con: 탭과 연결된 컨텐츠가 담긴 부모 <ul> 요소입니다.
+.con li: 각 탭에 대응하는 내용이 담겨 있는 <li> 요소들이 포함되어 있습니다.
+CSS 스타일:
+
+각 탭과 컨텐츠에 대한 스타일을 정의하고 있습니다.
+.btn은 flex로 배치되어 있어 가로로 나열되며, 각 탭은 색상이 지정되어 있습니다.
+.con li는 초기에 높이가 0이어서 화면에 표시되지 않습니다. .on 클래스가 추가되면 높이가 300px로 늘어나며 화면에 나타납니다.
+JavaScript:
+
+페이지 로드 후 첫 번째 탭과 컨텐츠에 초기 활성화를 위해 클래스를 추가합니다.
+myfnc 함수는 모든 탭의 활성화 클래스를 제거하는 역할을 합니다.
+각 탭에 mouseenter 이벤트를 추가하여 마우스가 올라갔을 때, myfnc를 호출하고 선택된 탭과 컨텐츠에 활성화 클래스를 추가합니다.
+이렇게 구성된 코드는 각 탭에 마우스를 올리면 해당하는 컨텐츠가 나타나며, 탭에 따라 배경색이 변하는 간단한 탭 메뉴를 만들고 있습니다. */
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      .btn {
+        display: flex;
+      }
+      .btn p {
+        width: 25%;
+        line-height: 50px;
+        text-align: center;
+      }
+      .btn p.on {
+        color: #fff;
+      }
+      .con {
+        position: relative;
+      }
+      .con li {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
+        color: #fff;
+        /* display: none; */
+        text-align: center;
+        line-height: 300px;
+        overflow: hidden;
+        transition: height 0.5s;
+      }
+      .btn p:first-child,
+      .con li:first-child {
+        background: red;
+      }
+      .btn p:nth-child(2),
+      .con li:nth-child(2) {
+        background: blue;
+      }
+      .btn p:nth-child(3),
+      .con li:nth-child(3) {
+        background: green;
+      }
+      .btn p:last-child,
+      .con li:last-child {
+        background: yellow;
+      }
+      .con li.on {
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn">
+      <p>하나</p>
+      <p>둘</p>
+      <p>셋</p>
+      <p>넷</p>
+    </div>
+    <ul class="con">
+      <li>하나</li>
+      <li>둘</li>
+      <li>셋</li>
+      <li>넷</li>
+    </ul>
+    <script>
+      document.querySelector(".btn p").classList.add("on");
+      document.querySelector(".con li").classList.add("on");
+      let btn = document.querySelectorAll(".btn p");
+      let con = document.querySelectorAll(".con li");
+      function myfnc() {
+        btn.forEach(function (o, i) {
+          o.classList.remove("on");
+        });
+      }
+      btn.forEach(function (o, i) {
+        //console.log(o);
+        //console.log(i);
+
+        //o.onmouseenter = function () {
+        o.addEventListener("mouseenter", function () {
+          myfnc();
+          //console.log(o);
+          console.log(i);
+          con.forEach(function (keys, item) {
+            //console.log(keys);
+            //console.log(item);
+            keys.classList.remove("on");
+          });
+          btn[i].classList.add("on");
+          con[i].classList.add("on");
+        });
+      });
+    </script>
+  </body>
+</html>
