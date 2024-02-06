@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      .gnb-container {
+        width: 1264px;
+        margin: 0 auto;
+        padding: 0 10px;
+        margin: 0 10px;
+      }
+      .logo-container {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+      .logo-container img {
+        width: 189px;
+        height: 90px;
+        margin-right: 10px; /* Adjust the margin as needed */
+      }
+      .top.logo {
+        display: flex;
+        align-items: center;
+        width: 189px;
+        height: 90px;
+      }
+      .top.logo img {
+        margin-right: 20px;
+        width: 189px;
+        height: 34.64px;
+        margin-right: 20px; /* Adjust the margin as needed */
+      }
+      .gnb {
+        width: ;
+        margin: 0 auto;
+      }
+      .gnb ul {
+        position: relative;
+        height: 90px;
+        padding: 0 1.5625em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #333;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        font-family: 20px "Geometos";
+      }
+      .gnb ul li {
+        width: 250px;
+        line-height: 50px;
+        text-align: center;
+        position: relative;
+      }
+      .gnb ul li:hover::after {
+        top: 50px;
+        left: 50%;
+        /* 가운데로 위치 */
+        position: absolute;
+        content: "";
+        width: 250px;
+        height: 2px;
+        background-color: #780997;
+        transition: background-color 0.3s;
+        transform: translateX(-50%);
+        /* 가운데로 위치 */
+      }
+      .gnb ul li a {
+        color: #000;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .gnb ul li a:hover {
+        color: #780997; /* Change the color on hover */
+      }
+      .lnb {
+        position: absolute;
+        display: flex;
+        left: 0;
+        top: 90px;
+        width: 100%;
+        background: #fff;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+      }
+      .lnb img {
+        width: 250px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        margin-right: 20px; /* Adjust the margin as needed */
+      }
+      .lnb.on {
+        height: 200px;
+      }
+      .lnb .sub {
+        width: 1280px;
+        margin: 0 auto;
+      }
+      .lnb .sub > ul {
+        display: flex;
+      }
+      .lnb .sub > ul > li {
+        width: 20%;
+        text-align: center;
+      }
+      .lnb .sub > ul > li a {
+        color: #000;
+      }
+      .lnb .sub > ul > li li {
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top logo">
+      <img src="images/30927906_logo.png" alt="logo" />
+      <div class="logo-icon">
+        <img src="images/logo-icon.png" alt="logo-icon" />
+      </div>
+      <div class="gnb">
+        <ul>
+          <li><a href="#">BRAND</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">STORE</a></li>
+          <li><a href="#">MEMBERSHIP</a></li>
+          <li><a href="#">COMMUNITY</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="lnb">
+      <img src="images/30927906_cxgZU5EC_20231205054239.jpg" alt="Image" />
+      <div class="sub">
+        <ul>
+          <li>
+            <ul>
+              <li><a href="#">더벤티 소개</a></li>
+              <li><a href="#">더벤티 연혁</a></li>
+              <li><a href="#">BI소개</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li><a href="#">더벤티 커피이야기</a></li>
+              <li><a href="#">신메뉴</a></li>
+              <li><a href="#">전체메뉴</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li><a href="#">매장찾기</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li><a href="#">더벤티 APP소개</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">보도자료</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">칭찬매장</a></li>
+              <li><a href="#">더벤티이야기</a></li>
+              <li><a href="#">SNS</a></li>
+              <li><a href="#">자주하는 질문</a></li>
+              <li><a href="#">THEVENGERS 봉사활동</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="visual">
+      <img src="images/photo1.jpg" alt="photo" />
+    </div>
+    <script>
+      let menu = document.querySelectorAll(".gnb ul li");
+      let subMenu = document.querySelector(".lnb");
+      let sub = document.querySelectorAll(".lnb .sub>ul>li");
+      menu.forEach(function (o, i) {
+        o.onmouseenter = function () {
+          //선택한 개체에 마우스 오버시
+          document.querySelector(".lnb").classList.add("on");
+        };
+        o.onmouseleave = function () {
+          //선택한 개체에 마우스 이탈시
+          document.querySelector(".lnb").classList.remove("on");
+        };
+      });
+      sub.forEach(function (o, i) {
+        o.onmouseenter = function () {
+          //선택한 개체에 마우스 오버시
+          subMenu.classList.add("on");
+          menu[i].classList.add("on");
+        };
+        o.onmouseleave = function () {
+          //선택한 개체에 마우스 오버시
+          subMenu.classList.remove("on");
+          menu[i].classList.remove("on");
+        };
+      });
+    </script>
+  </body>
+</html>
