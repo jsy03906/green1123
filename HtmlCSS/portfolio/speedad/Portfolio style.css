@@ -134,11 +134,9 @@ a {
   margin: 0;
   padding: 0;
 }
-
 .link ul {
   display: flex;
 }
-
 .link img {
   max-width: 100%;
   height: auto;
@@ -151,7 +149,6 @@ body {
   position: relative;
   height: 51px;
 }
-
 .overlay {
   position: absolute;
   width: 309px;
@@ -167,11 +164,9 @@ body {
   float: left;
   margin-right: 15px; /* 우측 간격 조절 */
 }
-
 .button {
   margin-left: 110px; /* 좌측 간격 조절 */
 }
-
 .overlay img {
   vertical-align: middle;
 }
@@ -197,8 +192,10 @@ body {
 .line {
   border: 0.1px solid #e53a47;
 }
+
 .position {
   /* 사이드메뉴(세로) */
+  float: left;
   width: 100px;
   border: 1px solid;
   margin-top: 20px;
@@ -248,14 +245,6 @@ code {
   text-align: center;
   padding: 10px;
   margin-top: 10px;
-}
-#talk {
-  display: flex;
-  align-items: center;
-
-  justify-content: center;
-  /* 수평 가운데 정렬을 위해 추가 */
-  height: 100vh; /* 뷰포트 높이에 맞게 설정 */
 }
 
 .sub_container {
