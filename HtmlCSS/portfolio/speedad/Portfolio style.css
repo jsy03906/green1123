@@ -203,13 +203,11 @@ body {
   border: 1px solid;
   margin-top: 20px;
   margin-bottom: 20px;
-  /* padding-bottom: 20px; */
   margin-left: 80px;
   text-align: center;
-  font-family: Arial, 맑은 고딕, sans-serif;
+  font-family: Arial, "맑은 고딕", sans-serif;
   font-size: 15px;
   color: #ddd;
-  float: left;
   font-family: "Noto Sans KR", "Malgun Gothic", "Verdana", "Dotum",
     "AppleGothic", sans-serif;
 }
@@ -240,7 +238,6 @@ code {
   color: #353535;
   background: #fff;
 }
-
 .sub_container .left_area {
   width: 286px;
   z-index: 60;
@@ -251,6 +248,18 @@ code {
   text-align: center;
   padding: 10px;
   margin-top: 10px;
+}
+#talk {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  /* 수평 가운데 정렬을 위해 추가 */
+  height: 100vh; /* 뷰포트 높이에 맞게 설정 */
+}
+
+.sub_container {
+  margin: auto; /* 수평 가운데 정렬을 위해 추가 */
 }
 .gif {
   display: flex;
@@ -276,19 +285,11 @@ code {
 .main_img li:nth-child(2) {
   z-index: -1; /* To make it overlap */
 }
-
-.skin,
-.rightwing_bn img {
-  margin-right: 500px;
-  float: left;
+.skin {
+  width: 286px; /* 혹은 필요한 크기로 조절 */
+  margin-left: 580px; /* 원하는 간격으로 조절 가능 */
 }
 
-.skin img,
-.rightwing_bn img,
-.gif {
-  margin-left: auto;
-  justify-content: space-between;
-}
 .container {
   display: flex;
   width: 1045px;
