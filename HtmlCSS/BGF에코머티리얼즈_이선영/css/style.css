@@ -1,0 +1,120 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #ccc;
+}
+body > a {
+  display: block;
+}
+body > a > img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.headerwrap {
+  position: relative;
+  width: 1600px;
+  margin: 0px auto;
+  padding: 5px;
+  border-top: 1px solid #ccc;
+  font-size: 1.125rem;
+  letter-spacing: 0;
+  line-height: 1;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  padding: 34px 40px 28px 40px;
+}
+header .headerwrap .logo {
+  height: 100%;
+  margin-right: 600px;
+}
+header .headerwrap .logo a img {
+  vertical-align: middle;
+}
+header .headerwrap .logo,
+header .headerwrap .menu {
+  float: left;
+}
+header .headerwrap .menu > li {
+  float: left;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+header .headerwrap .menu > li > a {
+  width: 54px;
+  padding: 0 29px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+/* 호버시 글씨 색상 변경을 위한 CSS 코드 */
+header .headerwrap .menu > li > a:hover {
+  color: #70d44b;
+}
+header .headerwrap .menu:hover .sub,
+header .headerwrap .menu:hover .subbg {
+  display: block;
+}
+header .headerwrap .menu .sub {
+  width: 100%;
+  padding-top: 57px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+header .headerwrap .menu .subbg {
+  background: #fff;
+  width: 100%;
+  height: 230px;
+  position: absolute;
+  left: 0;
+  top: 122px;
+  display: none;
+}
+header .headerwrap .menu .sub li {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400px;
+}
+header .headerwrap .headerright {
+  float: right;
+  width: auto;
+}
+header .headerwrap .headerright .bg {
+  float: left;
+}
+header .headerwrap .headerright .language {
+  display: inline-block;
+  position: relative;
+  float: right; /* 언어 선택 부분을 오른쪽에 정렬 */
+}
+header .headerwrap .headerright .language:hover .language-options {
+  display: block;
+}
+header .headerwrap .headerright .language-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+}
+header .headerwrap .headerright .language-options a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
