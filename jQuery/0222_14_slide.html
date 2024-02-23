@@ -6,63 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      p {
+      div {
         width: 300px;
         height: 300px;
-        overflow: hidden;
+      }
+      p {
+        width: 100%;
+        height: 100%;
+        background: url(../javascript/images/photo1.jpg) center/100%;
       }
     </style>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script>
       $(function () {
-        $("#fadein").click(function () {
-          // $("p").fadeIn();
-          $("p").fadeTo(1000, 1, "linear");
+        $("#slideUp").click(function () {
+          $("p img").slideUp(1000, "linear");
         });
-        $("#fadeout").click(function () {
-          //$("p").fadeOut();
-          $("p").fadeTo(1000, 0, "linear");
+        $("#slidedown").click(function () {
+          $("p img").slideDown(1000, "linear");
         });
-        let txt = true;
-        /* $("#fadetoggle").click(function () {
-         
-          //$("p").fadeToggle();
-          if (txt) {
-            $("p").fadeTo(1000, 0, "linear");
-          } else {
-            $("p").fadeTo(1000, 1, "linear");
-          }
-          txt = !txt;
-        });*/
-        $("#fadetoggle").click(function () {
-          let txt2 = $("p").attr("style");
-          console.log(txt2);
-          if (txt) {
-            if (txt2 == undefined || txt2 == "opacity: 1;") {
-              $("p").fadeTo(1000, 0, "linear");
-            } else {
-              $("p").fadeTo(1000, 1, "linear");
-            }
-          } else {
-            if (txt2 == undefined || txt2 == "opacity: 0;") {
-              $("p").fadeTo(1000, 1, "linear");
-            } else {
-              $("p").fadeTo(1000, 0, "linear");
-            }
-          }
-          txt = !txt;
+        $("#slideToggle").click(function () {
+          $("p img").slideToggle(1000, "linear");
         });
-        $("#fadeto").click(function () {
-          $("p").fadeTo(1000, 0.5, "linear");
+        $("spen").eq(0).siblings().css("display", "none");
+        $("a").click(function () {
+          let i = $(this).index();
+          console.log(i);
+          $("0").css("color", "#000");
+          $(this).css("color", "red");
+          $(this).css("display", "none");
+          $("spen").ep(i).css("display", "block");
         });
       });
     </script>
   </head>
   <body>
-    <p><img src="../javascript/images/photo1.jpg" alt="photo1" /></p>
-    <button id="fadein">fadeIn</button>
-    <button id="fadeout">fadeout</button>
-    <button id="fadetoggle">fadetoggle</button>
-    <button id="fadeto">fadeto</button>
+    <div>
+      <p></p>
+    </div>
+    <button id="slideUp">slideUp</button>
+    <button id="slideDown">slideDown</button>
+    <button id="slideToggle">slideToggle</button>
+    <div>
+      <a href="#">링크1</a>
+      <a href="#">링크2</a>
+      <a href="#">링크3</a>
+      <a href="#">링크4</a>
+      <a href="#">링크5</a>
+    </div>
+    <div>
+      <span>링크1하단입니다</span>
+      <span>링크2하단입니다</span>
+      <span>링크3하단입니다</span>
+      <span>링크4하단입니다</span>
+      <span>링크5하단입니다</span>
+    </div>
   </body>
 </html>
