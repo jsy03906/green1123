@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .on {
+        color: red;
+        background-color: yellow;
+      }
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        //     *$("p").hover(
+        //         function (){
+        //             $(this).addClass("on");
+        //         },
+        //         function (){
+        //             $(this).removeClass("on")
+        //         }
+        //     )
+        //   });
+        let eldChange = true;
+        //   $("button").click(function(){
+        //    if (eldChange) {
+        //       $("p").addClass("on");
+        //    } else $("p").removeClass("on");
+        //    eldChange = leleChange;
+        //   });
+        $("button").click(function () {
+          $("p").toggleClass("on");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>마우스오버</p>
+    <button>클릭</button>
+  </body>
+</html>
+<!-- p요소에 마우스 오버시 글자색은 red 배경은 노랑
+p요소에 마우스 이탈시 글자색은 검정 배경은 흰색 -->
+
+<!-- <script>
+    $(document).ready(function() {
+        // 이벤트 핸들링
+        $("button").click(function() {
+          // 버튼이 클릭되었을 때 실행되는 동작
+          alert("버튼이 클릭되었습니다!");
+        });
+      });
+</script> -->

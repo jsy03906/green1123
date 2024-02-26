@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .on {
+        color: red;
+        background-color: yellow;
+      }
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        // Mouseover event
+        $("p").mouseover(function () {
+          $(this).css("color", "red").css("background-color", "yellow");
+        });
+        // Mouseout event
+        $("p").mouseout(function () {
+          $(this).css("color", "black").css("background-color", "white");
+        });
+        // Rest of your existing code...
+        let a = $(".photo").html('<h2 id="page">제목태그</h2>');
+        let b = $("input").attr("value", "아이디를 입력해주세요");
+        $('<li class="blank">blank</li>').appendTo("ul");
+        $('<li class="blank">blank</li>').prependTo("ul");
+        $("body").append($("ul").clone());
+        $("ul").wrapInner("<div></div>");
+        $("ul").wrapAll("<section></section>");
+        $('<li class="new">newcontent</li>').insertBefore(".html");
+        $(".html").text("your text here");
+        $(".jquety").empty();
+        $("ul li").remove(".new, .blank");
+        $(".html").css("color", "red").css("background-color", "yellow");
+        $(".html").css("color", "#000").css("background-color", "#fff");
+        $(".css").addClass("on");
+        $(".css").removeClass("on");
+      });
+    </script>
+  </head>
+  <body>
+    <p>마우스오버</p>
+  </body>
+</html>
+<!-- p요소에 마우스 오버시 글자색은 red 배경은 노랑
+p요소에 마수스 이탈시 글자색은 검정 배경은 흰색 -->
