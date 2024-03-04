@@ -1,0 +1,12 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+  "editor.hover.enabled": false,
+  "editor.formatOnSave": true,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.showAnnouncements": null
+}

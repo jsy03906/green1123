@@ -1,0 +1,414 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.top {
+  background: #e53a47;
+  height: 34px;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+}
+.topMenu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topMenu ul li {
+  margin-right: 15px; /* 각 메뉴 간의 간격 조절 */
+}
+.loginButton {
+  margin-left: auto; /* 로그인 버튼을 오른쪽으로 이동 */
+}
+.top .topMenu li a {
+  font-family: Arial, "맑은 고딕", sans-serif;
+  color: #fff;
+  padding: 10px;
+  padding-left: -1px;
+  line-height: 34px;
+}
+.top .topMenu li a:after {
+  content: "|";
+  color: rgba(252, 245, 245, 0.932);
+  padding: 0 3px;
+}
+.top .topMenu li:last-child a:after {
+  content: "";
+}
+.top .topMenu li {
+  float: left;
+}
+#loginButton {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* 로그인 폼 토글 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+nav {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+/* 로그인 폼의 스타일링 */
+.login-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  /* 흰색 배경 */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  /* 처음에는 숨겨져 있음 */
+  z-index: 1000;
+  /* 다른 요소 위에 표시되도록 설정 */
+}
+/* 로그인 폼이 활성화되었을 때 오버레이의 스타일 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  /* 로그인 폼을 제외한 모든 것 위에 배치됨 */
+  display: none;
+  /* 처음에는 숨겨져 있음 */
+}
+.login-form {
+  display: none;
+}
+.login-box {
+  font: 0.75em Malgun Gothic, Verdana, Dotum, AppleGothic, sans-serif;
+  color: #353535;
+  font-family: "Noto Sans KR", "Malgun Gothic", "Verdana", "Dotum",
+    "AppleGothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-top: -10px;
+}
+.bnn {
+  background-color: #ddd;
+  height: 330px;
+}
+.bn {
+  font-size: 0;
+  width: 1045px;
+  margin: 0 auto;
+  background-color: #ddd;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cycle-side-active {
+  position: relative;
+}
+.cycle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#cycle1 {
+  top: -314px;
+  left: 840px;
+  z-index: 1;
+}
+#cycle2 {
+  top: -314px;
+  left: 840px;
+  z-index: 2;
+}
+.cycle-slide {
+  position: relative;
+  left: 0px;
+  z-index: 50;
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.cycle-slide .cycle-slide-active {
+  position: absolute;
+  top: 0px;
+  left: 28.3607px;
+  z-index: 49;
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.cycle-slidee {
+  position: relative;
+}
+.slide-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+#top-slide-prev {
+  left: 10px;
+}
+#top-slide-next {
+  right: 10px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  height: 380px;
+  width: 1045px;
+}
+.speedsearch {
+  display: flex;
+  width: 1045px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* 조절 가능한 간격 */
+}
+.logo ul,
+.search ul,
+.banner ul,
+.link ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link ul {
+  display: flex;
+}
+.link img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px; /* 간격 조절 */
+}
+body {
+  margin: 0;
+}
+.background {
+  position: relative;
+  height: 51px;
+}
+.overlay {
+  position: absolute;
+  width: 309px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  width: 67px;
+  float: left;
+  margin-right: 15px; /* 우측 간격 조절 */
+}
+.button {
+  margin-left: 110px; /* 좌측 간격 조절 */
+}
+.overlay img {
+  vertical-align: middle;
+}
+.overlay img:first-child {
+  margin-left: 10px;
+  position: relative;
+}
+.overlay::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 25px;
+  background: #000;
+  left: 75px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search .background .overlay .title,
+.search .background .overlay .button {
+  max-width: 100%;
+  height: auto;
+}
+.line {
+  border: 0.1px solid #e53a47;
+}
+
+.position {
+  /* 사이드메뉴(세로) */
+  float: left;
+  width: 100px;
+  border: 1px solid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  text-align: center;
+  font-family: Arial, "맑은 고딕", sans-serif;
+  font-size: 15px;
+  color: #ddd;
+  font-family: "Noto Sans KR", "Malgun Gothic", "Verdana", "Dotum",
+    "AppleGothic", sans-serif;
+}
+.position ul {
+  list-style: none;
+  padding: 0;
+}
+.position li {
+  position: relative;
+  border-bottom: 1px solid #ddd; /* 아래쪽 border 추가 */
+}
+.position a {
+  text-decoration: none;
+  display: block;
+  padding: 7px 0; /* 텍스트 내용을 위아래로 이동시키기 위한 padding 설정 */
+}
+.position li:last-child {
+  border-bottom: none; /* 맨 아래 요소의 선을 없앰 */
+}
+div {
+  display: block;
+}
+body,
+code {
+  font: 0.75em Malgun Gothic, Verdana, Dotum, AppleGothic, sans-serif;
+  color: #353535;
+  background: #fff;
+}
+.sub_container .left_area {
+  width: 286px;
+  z-index: 60;
+  height: 318px;
+  background: url(../SkinImg/today_bg.gif);
+  float: left;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+.sub_container {
+  margin: auto; /* 수평 가운데 정렬을 위해 추가 */
+}
+.gif {
+  display: flex;
+  list-style: none;
+  margin-left: auto; /* Move .gif to the right */
+}
+.gif li {
+  margin-right: 20px;
+}
+.main_img {
+  position: relative;
+}
+.main_img li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main_img li {
+}
+.main_img li:nth-child(2) {
+  z-index: -1; /* To make it overlap */
+}
+.skin {
+  width: 286px; /* 혹은 필요한 크기로 조절 */
+  margin-left: 580px; /* 원하는 간격으로 조절 가능 */
+}
+.container {
+  display: flex;
+  width: 1045px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.container > div > div {
+  float: left;
+}
+.container > div > div:last-child {
+  width: 341px;
+}
+.event-text {
+  margin-right: 10px; /* 텍스트와 이미지 사이의 간격을 조절할 수 있습니다. */
+  width: 100px;
+}
+.event-image {
+  width: 341px; /* 이미지의 너비를 조절할 수 있습니다. */
+  cursor: pointer; /* 포인터 커서를 사용하여 클릭 가능함을 표시합니다. */
+}
+.gonggi {
+  width: 500px;
+  float: right;
+  margin-left: 70px;
+}
+.speedad_logo.jpg {
+  text-decoration: none;
+  float: left;
+}
+.item {
+  font-size: 20px;
+  width: 390px;
+  float: right;
+  line-height: 35px;
+}
+.speedad_logo.jpg .item {
+  float: left;
+}
+
+/* 스타일을 직접 지정하는 경우 */
+/* .custom-size {
+  font-size: 25px; 원하는 크기로 조절
+} */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* 최소 높이를 화면 높이만큼 설정합니다. */
+  display: flex;
+  flex-direction: column;
+}
+.rectangle-box {
+  width: 1045px;
+  height: 50px;
+  margin: auto;
+  background-color: #babc1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  position: fixed;
+  bottom: 0;
+  left: 50%; /* 왼쪽으로부터 50% 위치로 설정합니다. */
+  transform: translateX(
+    -50%
+  ); /* 가운데 정렬을 위해 50%만큼 좌측으로 이동시킵니다. */
+}

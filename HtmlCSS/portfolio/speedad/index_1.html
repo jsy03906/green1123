@@ -5,20 +5,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="Portfolio style.css" />
+    <link rel="stylesheet" href="Portfolio_style.css" />
   </head>
   <body>
     <header>
       <div class="top">
         <div class="topMenu">
           <ul>
-            <li>
-              <a href=""
-                >쉬운주문/빠른 제작진행/품질보증!
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
-              >
+            <li class="easyorder">
+              <a href="">쉬운주문/빠른 제작진행/품질보증!</a>
             </li>
-            <li><a href="">로그인</a></li>
+            <li><a href=""></a></li>
+            <button id="loginButton">로그인</button>
+
+            <!-- 로그인 폼 -->
+            <form id="loginForm" class="login-form">
+              <label for="username">아이디:</label>
+              <input type="text" id="username" name="username" />
+
+              <label for="password">비밀번호:</label>
+              <input type="password" id="password" name="password" />
+              <button
+                type="button"
+                onclick="login()"
+                style="
+                  background: transparent;
+                  border: none;
+                  outline: none;
+                  cursor: pointer;
+                "
+              >
+                로그인
+              </button>
+            </form>
+            <!-- <input id="sProvider" name="sProvider" value="" type="hidden" />
+                <div class="xans-element- xans-member xans-member-login">
+                  <div class="login">
+                    <h3 class="displaynone">
+                      <img
+                        src="images/h3_login.gif"
+                        alt="회원로그인"
+                      />
+                    </h3>
+                    <fieldset>
+                      <div class="login-box">
+                        <legend>회원로그인</legend>
+                        <label class="id"
+                          ><span
+                            ><img
+                              src="images/login_id.gif"
+                              alt="아이디" /></span
+                          ><input
+                            id="member_id"
+                            name="member_id"
+                            fw-filter="isFill"
+                            fw-label="아이디"
+                            fw-msg=""
+                            class="inputTypeText"
+                            placeholder=""
+                            value=""
+                            type="text"
+                        /></label>
+                        <label class="password"
+                          ><span
+                            ><img
+                              src="images/login_pw.gif"
+                              alt="비밀번호" /></span
+                          ><input
+                            id="member_passwd"
+                            name="member_passwd"
+                            fw-filter="isFill&amp;isMin[4]&amp;isMax[16]"
+                            fw-label="패스워드"
+                            fw-msg=""
+                            autocomplete="off"
+                            value=""
+                            type="password"
+                        /></label>
+                        <div class="other-box">
+                          <p class="security">
+                            <img
+                              src="images/ico_access.gif"
+                              alt="보안접속"
+                            />
+                         </p>
+                          <a href="#none"
+                            class="btn-login"
+                            onclick="MemberAction.login('member_form_2789711041'); return false;" >
+                            <img src="images/btn_login.gif" alt="로그인" /></a>
+                          <ul>
+                            <li>
+                              <a href="images/id/find_id.html"
+                                ><img
+                                  src="images/btn_idsearch.gif"
+                                  alt="아이디찾기"
+                              /></a>
+                            </li>
+                            <li>
+                              <a href="/member/passwd/find_passwd_info.html"
+                                ><img
+                                  src="images/btn_pwsearch.gif"
+                                  alt="비밀번호찾기"
+                              /></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <ul class="snsArea">
+                        <li class="displaynone">
+                          <a href="#none" onclick=""
+                            ><img
+                              src="images//btn_naver_login.gif"
+                              alt="네이버 로그인"
+                          /></a>
+                        </li>
+                        <li class="displaynone">
+                          <a href="#none" onclick=""
+                            ><img
+                              src="images/_facebook_login.gif"
+                              alt="페이스북 로그인"
+                          /></a>
+                        </li>
+                        <li class="displaynone">
+                          <a href="#none" onclick=""
+                            ><img
+                              src="images/btn_google_login.gif"
+                              alt="구글 로그인"
+                          /></a>
+                        </li>
+                        <li class="displaynone">
+                          <a href="#none" onclick=""
+                            ><img
+                              src="images/btn_kakao_login.gif"
+                              alt="카카오계정 로그인"
+                          /></a>
+                        </li>
+                      </ul>
+                    </fieldset> -->
+            <!-- </div>
+                </div>
+              </form>
+            </div> -->
             <li><a href="">회원가입</a></li>
             <li><a href="">장바구니</a></li>
             <li><a href="">마이페이지</a></li>
@@ -26,7 +152,6 @@
           </ul>
         </div>
       </div>
-
       <div class="bnn">
         <div class="bn">
           <div class="box">
@@ -102,7 +227,6 @@
           </div>
         </div>
       </div>
-
       <div class="speedsearch">
         <div class="logo">
           <ul>
@@ -144,49 +268,45 @@
       <div id="talk">
         <div class="position">
           <ul>
-            <li><a href="/product/list_card.html?cate_no=24">명함</a></li>
+            <li><a href="#">명함</a></li>
             <li>
-              <a href="/product/list.html?cate_no=66">대봉투<br />소봉투</a>
+              <a href="#">대봉투<br />소봉투</a>
             </li>
-            <li><a href="/product/list_sticker.html?cate_no=28">스티커</a></li>
-            <li><a href="/product/list_poster.html?cate_no=27">포스터</a></li>
+            <li><a href="#">스티커</a></li>
+            <li><a href="#">포스터</a></li>
             <li>
-              <a href="/product/list_banner.html?cate_no=75"
-                >실사/배너<br />현수막</a
-              >
+              <a href="#">실사/배너<br />현수막</a>
             </li>
             <li>
-              <a href="/product/list.html?cate_no=61">엽서/티켓<br />상품권</a>
+              <a href="#">엽서/티켓<br />상품권</a>
             </li>
             <li>
-              <a href="/product/list.html?cate_no=74">양식지<br />NCR지</a>
+              <a href="#">양식지<br />NCR지</a>
             </li>
-            <li><a href="/product/list_flyer.html?cate_no=25">전단지</a></li>
-            <li><a href="/product/list_leaflet.html?cate_no=26">리플렛</a></li>
+            <li><a href="#">전단지</a></li>
+            <li><a href="#">리플렛</a></li>
             <li>
-              <a href="/product/list.html?cate_no=65">투명화일<br />종이홀더</a>
-            </li>
-            <li>
-              <a href="/product/list.html?cate_no=70">카다로그<br />책자</a>
-            </li>
-            <li><a href="/product/list.html?cate_no=72">액자</a></li>
-            <li>
-              <a href="/product/list.html?cate_no=77">디자인<br />의뢰</a>
+              <a href="#">투명화일<br />종이홀더</a>
             </li>
             <li>
-              <a href="/product/list.html?cate_no=78"
-                >컨텐츠<br />마케팅<br />기획</a
-              >
+              <a href="#">카다로그<br />책자</a>
+            </li>
+            <li><a href="#">액자</a></li>
+            <li>
+              <a href="#">디자인<br />의뢰</a>
             </li>
             <li>
-              <a href="/product/list.html?cate_no=79">홈페이지<br />제작</a>
-            </li>
-            <li><a href="/product/list.html?cate_no=76">쇼핑백</a></li>
-            <li>
-              <a href="/product/list.html?cate_no=80">패키지<br />박스</a>
+              <a href="#">컨텐츠<br />마케팅<br />기획</a>
             </li>
             <li>
-              <a href="/product/list.html?cate_no=73">판촉물<br />기념품</a>
+              <a href="#">홈페이지<br />제작</a>
+            </li>
+            <li><a href="#">쇼핑백</a></li>
+            <li>
+              <a href="#">패키지<br />박스</a>
+            </li>
+            <li>
+              <a href="#">판촉물<br />기념품</a>
             </li>
           </ul>
         </div>
@@ -218,45 +338,54 @@
           </div>
         </div>
       </div>
-
       <div class="rectangle-box">
         <span>Copyright © 스피드애드. All rights reserved.</span>
       </div>
     </header>
     <script>
-      window.addEventListener("scroll", function () {
-        var positionDiv = document.querySelector(".position");
-        var scrollY = window.scrollY;
+      document.addEventListener("DOMContentLoaded", function () {
+        // 로그인 버튼 클릭 시
+        document
+          .getElementById("loginButton")
+          .addEventListener("click", function () {
+            // 로그인 폼을 보이게 함
+            var loginForm = document.querySelector(".login-form");
+            loginForm.style.display = "block";
 
-        if (scrollY > 20) {
-          positionDiv.style.top = scrollY - 20 + "px";
-        } else {
-          positionDiv.style.top = "0";
-        }
+            // 오버레이의 배경색을 흰색으로 변경
+            var overlay = document.querySelector(".overlay");
+            overlay.style.display = "block";
+            overlay.style.backgroundColor = "#ffffff";
+
+            // 오버레이의 너비를 페이지 가로폭의 80%로 설정하고 오른쪽으로 이동
+            overlay.style.width = "80%";
+            overlay.style.position = "absolute";
+            overlay.style.right = "0";
+          });
+      });
+      window.addEventListener("scroll", function () {
+        // 스크롤 시 특정 동작을 수행하는 코드
       });
     </script>
+    <!-- 로그인 버튼을 클릭하면 로그인 폼이 나타남 -->
     <script>
-      // 정가제·즉시견적/철저한 품질관리
       document.addEventListener("DOMContentLoaded", function () {
-        const slides = document.querySelectorAll(".main_img li");
-        let currentSlide = 0;
+        let currentIndex = 0;
+        const images = document.querySelectorAll(".main_img li");
 
-        function showSlide(index) {
-          slides.forEach((slide, i) => {
-            if (i === index) {
-              slide.style.display = "block";
-            } else {
-              slide.style.display = "none";
-            }
+        function showImage(index) {
+          images.forEach((img, i) => {
+            img.style.display = i === index ? "block" : "none";
           });
         }
 
-        function nextSlide() {
-          currentSlide = (currentSlide + 1) % slides.length;
-          showSlide(currentSlide);
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
         }
 
-        setInterval(nextSlide, 5000); // 5 seconds interval
+        setInterval(nextImage, 3000);
+        showImage(currentIndex);
       });
     </script>
   </body>
