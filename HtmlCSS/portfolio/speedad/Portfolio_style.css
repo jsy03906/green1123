@@ -30,7 +30,6 @@ a {
   margin-right: 15px; /* 각 메뉴 간의 간격 조절 */
 }
 #loginButton {
-  w
   margin-left: auto; /* 로그인 버튼을 오른쪽으로 이동 */
   margin-right: 15px;
 }
@@ -331,12 +330,16 @@ code {
   margin: auto; /* 수평 가운데 정렬을 위해 추가 */
 }
 .gif {
+  margin: 0;
+  padding: 0;
+  margin: auto 0;
   display: flex;
   list-style: none;
   margin-left: auto; /* Move .gif to the right */
 }
 .gif li {
   margin-right: 20px;
+  padding-bottom: 20px;
 }
 .main_img {
   position: relative;
