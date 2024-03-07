@@ -1,0 +1,98 @@
+// 채널 IO 웹위젯을 띄우기 위한 스크립트
+// https://desk.channel.io/#/channels/14041/settings/plugins/15342
+
+var ChattingWidget = (function () {
+    var Const = {
+        CS: { // 비즈 행복팀에서 사용
+            pluginKey: 'dcb9f472-776b-4675-9fd6-59349b156d52',
+            accessKey: '5d6792c60c66792a',
+            secret: '18e54598565b63d18ca2730a2762db6a'
+        },
+        VD: { // 비즈 디자인팀에서, 디자인 의뢰관련으로 사용
+            pluginKey: '50f6d637-667e-4638-9c2b-7dfa2fbc0d6c'
+        }
+    };
+
+    /** 
+     * @params uiStyle 채널톡 버튼 UI (legacy, renewal) 
+     */
+    function Setting(constKey, uiStyle) {
+        const pluginKey = (Const[constKey] || Const.CS).pluginKey;
+        const isRenewal = uiStyle === 'renewal';
+        var prevSetting = !!window.channelPluginSettings ? window.channelPluginSettings : {};
+        return $.extend(prevSetting, {
+            pluginKey: pluginKey, 
+            customLauncherSelector: isRenewal ? '.channel-button-container' : '', 
+            hideChannelButtonOnBoot: isRenewal
+        });
+    }
+
+    return {
+        init: function (args, uiStyle) {
+            window.channelPluginSettings = $.extend(new Setting(BizCommon.getData('ChattingTeamKey'), uiStyle), args);
+            /* Channel Plugin Scripts */
+            (function initChannelIoWidget() {
+                var w = window;
+                if (w.ChannelIO) {
+                    return (window.console.error || window.console.log || function () {
+                    })('ChannelIO script included twice.');
+                }
+                var ch = function () {
+                    ch.c(arguments);
+                };
+                ch.q = [];
+                ch.c = function (args) {
+                    ch.q.push(args);
+                };
+                w.ChannelIO = ch;
+
+                function l() {
+                    if (w.ChannelIOInitialized) {
+                        return;
+                    }
+                    w.ChannelIOInitialized = true;
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+                    s.charset = 'UTF-8';
+                    var x = document.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+
+                if (document.readyState === 'complete') {
+                    l();
+                } else if (window.attachEvent) {
+                    window.attachEvent('onload', l);
+                } else {
+                    window.addEventListener('DOMContentLoaded', l, false);
+                    window.addEventListener('load', l, false);
+                }
+            })();
+            /* End Channel Plugin */
+        },
+        trackEvent: function (name, properties) {
+            ChannelIO('track', name, !!properties ? properties : {});
+        },
+        addProfile: function (eventName, profile, eventProperties) {
+            var data = {};
+            data[window.channelPluginSettings.userId] = profile;
+            window.channelPluginSettings.profile = $.extend(window.channelPluginSettings.profile, profile);
+            ChannelIO('boot', window.channelPluginSettings);
+
+            this.trackEvent(eventName, !eventProperties ? profile : eventProperties);
+        },
+        reboot: function (teamName) {
+            // if (isTemporary) {
+            //     ChannelIO('onBoot', function () {
+            //         ChannelIO('show');
+            //         ChannelIO('onHide', function () {
+            //             ChannelIO('boot', new Setting(Const.CS.pluginKey));
+            //             ChannelIO('clearCallbacks');
+            //         });
+            //     });
+            // }
+            ChannelIO('boot', new Setting(Const[teamName].pluginKey));
+        }
+    };
+}());

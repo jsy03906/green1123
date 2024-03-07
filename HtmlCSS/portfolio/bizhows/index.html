@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="on">
+      <div class="head">
+        <div class="logo"><a href="#"></a></div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">상품제작전체보기</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="#">스티커 ></a></li>
+                  <li><a href="#">친환경 라벨 스티커</a></li>
+                  <li><a href="#">3D 스티커</a></li>
+                  <li><a href="#">싱글 규격 스티커</a></li>
+                  <li><a href="#">싱글 비규격 스티커</a></li>
+                  <li><a href="#">싱글 자유 스티커</a></li>
+                  <li><a href="#">낱장 스티커</a></li>
+                  <li><a href="#">프리미엄 투명 스티커</a></li>
+                  <li><a href="#">바닥 스티커</a></li>
+                  <li><a href="#">아크릴 스티커</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">명함</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="#">명함 ></a></li>
+                  <li><a href="#">명함 BEST</a></li>
+                  <li><a href="#">기본명함 BEST</a></li>
+                  <li><a href="#">프리미엄명함 HOT</a></li>
+                  <li><a href="#">재질명함</a></li>
+                  <li><a href="#">패턴명함</a></li>
+                  <li><a href="#">펄지명함</a></li>
+                  <li><a href="#">카드명함</a></li>
+                  <li><a href="#">컬러명함</a></li>
+                  <li><a href="#">3D명함</a></li>
+                  <li><a href="#">빠른출고명함</a></li>
+                  <li><a href="#">사원증</a></li>
+                  <li><a href="#">도장쿠폰</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">현수막</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="#">현수막></a></li>
+                  <li><a href="#">기본현수막</a></li>
+                  <li><a href="#">통풍현수막</a></li>
+                  <li><a href="#">윈도우 플래그</a></li>
+                  <li><a href="#">대형현수박</a></li>
+                  <li><a href="#">족자형 현수막</a></li>
+                  <li><a href="#">게릴라 현수막</a></li>
+                  <li><a href="#">어깨띠</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Career</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="#">인재상</a></li>
+                  <li><a href="#">인사제도</a></li>
+                  <li><a href="#">복리후생</a></li>
+                  <li><a href="#">직무소개</a></li>
+                  <li><a href="#">채용공고</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="icon">
+          <ul>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="link">
+          <ul>
+            <li><a href="#">상품 제작</a></li>
+            <li><a href="#">디자인 의뢰</a></li>
+            <li><a href="#">홍보·마케팅</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </header>
+    <section><img src="images/main1.jpg" alt="img1" /></section>
+    <section><img src="images/main2.jpg" alt="img2" /></section>
+    <section><img src="images/main3.gif" alt="img3" /></section>
+    <section><img src="images/main4.gif" alt="img4" /></section>
+    <section><img src="images/main5.jpg" alt="img5" /></section>
+    <section><img src="images/main6.jpg" alt="img6" /></section>
+    <section><img src="images/main7.jpg" alt="img7" /></section>
+    <section><img src="images/main8.jpg" alt="img7" /></section>
+    <section><img src="images/main9.jpg" alt="img7" /></section>
+   
+    <script>
+      let header = document.querySelector("header");
+      document.querySelector("nav").onmouseenter = function () {
+        header.classList.add("on");
+      };
+      header.onmouseleave = function () {
+        header.classList.remove("on");
+      };
+    </script>
+    <script>
+     let sections = document.querySelectorAll("section");
+     let currentSectionIndex = 0;
+     function showNextSection() {
+     // 현재 보이는 섹션을 숨깁니다.
+     sections[currentSectionIndex].style.display = "none";
+     // 다음 섹션을 보이도록 설정하고 인덱스를 업데이트합니다.
+     currentSectionIndex = (currentSectionIndex + 1) % sections.length;
+     sections[currentSectionIndex].style.display = "block";
+     }
+    // 페이지 로드 시 초기 설정: 첫 번째 섹션을 보이도록 설정합니다.
+    sections.forEach((section, index) => {
+    if (index !== 0) {
+    section.style.display = "none";
+    }
+    });
+    // 2초마다 showNextSection 함수를 호출하여 다음 섹션을 보이도록 설정합니다.
+    setInterval(showNextSection, 2000);
+    </script>
+  </body>
+</html>
