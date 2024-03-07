@@ -359,7 +359,8 @@ code {
 .main_img {
   position: relative;
   width: 300px; /* 이미지 크기에 맞게 조절 */
-  height: 200px; 이미지 크기에 맞게 조절
+  height: 200px;
+  /* 이미지 크기에 맞게 조절 */
   overflow: hidden; /* 자식 요소가 넘치는 부분을 숨김 */
 }
 .main_img li {
@@ -455,7 +456,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 .rectangle-box {
   width: 1045px;
@@ -497,15 +497,41 @@ body {
   font-size: 0;
   line-height: 0;
 }
-html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+img {
   margin: 0;
   padding: 0;
 }
 * {
-  font-family: 'Noto Sans KR','Malgun Gothic','Verdana','Dotum','AppleGothic',sans-serif;
+  font-family: "Noto Sans KR", "Malgun Gothic", "Verdana", "Dotum",
+    "AppleGothic", sans-serif;
 }
-user agent stylesheet
-ul {
+user agent stylesheet ul {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -514,11 +540,9 @@ ul {
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
-body, code {
-  font: 0.75em Malgun Gothic,Verdana,Dotum,AppleGothic,sans-serif;
+body,
+code {
+  font: 0.75em Malgun Gothic, Verdana, Dotum, AppleGothic, sans-serif;
   color: #353535;
   background: #fff;
 }
-
-
-

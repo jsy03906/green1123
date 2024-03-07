@@ -29,8 +29,6 @@
                   <li><a href="#">아크릴 스티커</a></li>
                 </ul>
               </div>
-            </li>
-            <li>
               <a href="#">명함</a>
               <div class="sub">
                 <ul>
@@ -47,6 +45,26 @@
                   <li><a href="#">빠른출고명함</a></li>
                   <li><a href="#">사원증</a></li>
                   <li><a href="#">도장쿠폰</a></li>
+                  <br />
+                  <li><a href="#">리플렛/책자 ></a></li>
+                  <li><a href="#">3D 리플렛</a></li>
+                  <li><a href="#">무선 책자</a></li>
+                  <li><a href="#">PDF 무선책자</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">명함</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="#">기본명함 ></a></li>
+                  <li><a href="#">프리미엄명함</a></li>
+                  <li><a href="#">재질명함</a></li>
+                  <li><a href="#">패턴명함</a></li>
+                  <li><a href="#">펄지명함</a></li>
+                  <li><a href="#">카드명함</a></li>
+                  <li><a href="#">컬러명함</a></li>
+                  <li><a href="#">3D명함</a></li>
                 </ul>
               </div>
             </li>
@@ -54,7 +72,7 @@
               <a href="#">현수막</a>
               <div class="sub">
                 <ul>
-                  <li><a href="#">현수막></a></li>
+                  <li><a href="#">현수막 ></a></li>
                   <li><a href="#">기본현수막</a></li>
                   <li><a href="#">통풍현수막</a></li>
                   <li><a href="#">윈도우 플래그</a></li>
@@ -66,14 +84,22 @@
               </div>
             </li>
             <li>
-              <a href="#">Career</a>
+              <a href="#">배너</a>
               <div class="sub">
                 <ul>
-                  <li><a href="#">인재상</a></li>
-                  <li><a href="#">인사제도</a></li>
-                  <li><a href="#">복리후생</a></li>
-                  <li><a href="#">직무소개</a></li>
-                  <li><a href="#">채용공고</a></li>
+                  <li><a href="#">배너 ></a></li>
+                  <li><a href="#">와이드배너</a></li>
+                  <li><a href="#">행잉 배너</a></li>
+                  <li><a href="#">롤업 배너</a></li>
+                  <li><a href="#">슬림형 물통 배너</a></li>
+                  <li><a href="#">에어간판</a></li>
+                  <li><a href="#">기본배너</a></li>
+                  <li><a href="#">자이언트 배너</a></li>
+                  <li><a href="#">투명 배너</a></li>
+                  <li><a href="#">스탠드배너</a></li>
+                  <li><a href="#">허니콤보드 배너</a></li>
+                  <li><a href="#">윈드 배너</a></li>
+                  <li><a href="#">통풍 배너</a></li>
                 </ul>
               </div>
             </li>
@@ -95,19 +121,18 @@
             <li><a href="#">디자인 의뢰</a></li>
             <li><a href="#">홍보·마케팅</a></li>
           </ul> -->
-        </div>
       </div>
     </header>
     <section><img src="images/main1.jpg" alt="img1" /></section>
     <section><img src="images/main2.jpg" alt="img2" /></section>
-    <section><img src="images/main3.gif" alt="img3" /></section>
+    <section><img src="images/main3.jpg" alt="img3" /></section>
     <section><img src="images/main4.gif" alt="img4" /></section>
     <section><img src="images/main5.jpg" alt="img5" /></section>
-    <section><img src="images/main6.jpg" alt="img6" /></section>
+    <section><img src="images/main6.gif" alt="img6" /></section>
     <section><img src="images/main7.jpg" alt="img7" /></section>
-    <section><img src="images/main8.jpg" alt="img7" /></section>
-    <section><img src="images/main9.jpg" alt="img7" /></section>
-   
+    <section><img src="images/main8.jpg" alt="img8" /></section>
+    <section><img src="images/main9.jpg" alt="img9" /></section>
+
     <script>
       let header = document.querySelector("header");
       document.querySelector("nav").onmouseenter = function () {
@@ -118,23 +143,23 @@
       };
     </script>
     <script>
-     let sections = document.querySelectorAll("section");
-     let currentSectionIndex = 0;
-     function showNextSection() {
-     // 현재 보이는 섹션을 숨깁니다.
-     sections[currentSectionIndex].style.display = "none";
-     // 다음 섹션을 보이도록 설정하고 인덱스를 업데이트합니다.
-     currentSectionIndex = (currentSectionIndex + 1) % sections.length;
-     sections[currentSectionIndex].style.display = "block";
-     }
-    // 페이지 로드 시 초기 설정: 첫 번째 섹션을 보이도록 설정합니다.
-    sections.forEach((section, index) => {
-    if (index !== 0) {
-    section.style.display = "none";
-    }
-    });
-    // 2초마다 showNextSection 함수를 호출하여 다음 섹션을 보이도록 설정합니다.
-    setInterval(showNextSection, 2000);
+      let sections = document.querySelectorAll("section");
+      let currentSectionIndex = 0;
+      function showNextSection() {
+        // 현재 보이는 섹션을 숨깁니다.
+        sections[currentSectionIndex].style.display = "none";
+        // 다음 섹션을 보이도록 설정하고 인덱스를 업데이트합니다.
+        currentSectionIndex = (currentSectionIndex + 1) % sections.length;
+        sections[currentSectionIndex].style.display = "block";
+      }
+      // 페이지 로드 시 초기 설정: 첫 번째 섹션을 보이도록 설정합니다.
+      sections.forEach((section, index) => {
+        if (index !== 0) {
+          section.style.display = "none";
+        }
+      });
+      // 2초마다 showNextSection 함수를 호출하여 다음 섹션을 보이도록 설정합니다.
+      setInterval(showNextSection, 2000);
     </script>
   </body>
 </html>

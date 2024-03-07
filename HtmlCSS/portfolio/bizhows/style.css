@@ -25,7 +25,7 @@ header.on {
   background: #fff;
   /* (메뉴 호버했을때 흰색베다) */
   transition: height 0.6s ease-in-out;
- }
+}
 header::before {
   content: "";
   display: block;
@@ -71,11 +71,11 @@ header.on .logo a {
 header .head nav > ul > li > a {
   padding: 0 40px;
   display: inline-block;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   color: #000;
   box-sizing: border-box;
-  line-height: 80px;
+  line-height: 90px;
 }
 header.on .head nav > ul > li > a {
   color: #000;
@@ -87,7 +87,10 @@ header.on nav > ul > li:hover > a {
   padding: 20px 0 50px;
 }
 .head nav .sub li {
-  text-align: center;
+  text-align: left;
+}
+.head nav .sub ul li {
+  display: block;
 }
 .head nav .sub li:hover {
   text-decoration: underline 2px;
@@ -97,7 +100,7 @@ header.on nav > ul > li:hover > a {
   margin-top: 15px;
 }
 .head nav .sub li a {
-  font-size: 14px;
+  font-size: 12px;
   color: #555;
 }
 .head .icon ul {
