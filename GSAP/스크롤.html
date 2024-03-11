@@ -24,7 +24,7 @@
         width: 100%;
         height: 100%;
       }
-      .intro_text > div {
+      .intro_text {
         position: absolute;
         left: 100px;
         top: 50%;
@@ -33,11 +33,11 @@
         color: #fff;
       }
 
-      .intro_text > div.intro_text1 {
+      .intro_text1 {
         font-size: 70px;
       }
 
-      .intro_text > div.intro_text2 {
+      .intro_text2 {
         font-size: 48px;
         display: none;
       }
@@ -45,7 +45,6 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        /* z-index: 0; */
       }
       .pad img {
         width: 100%;
@@ -59,8 +58,7 @@
         width: 96%;
         height: 94%;
         object-fit: cover;
-        pointer-events: none; /* 비디오에 마우스 이벤트가 전달되지 않도록 설정 */
-        /* z-index: 1; */
+        pointer-events: none;
       }
       video {
         width: 100%;
@@ -75,7 +73,6 @@
         <div class="pad">
           <img class="pad-image" src="images/img-pad.png" alt="Pad" />
         </div>
-        <!-- 비디오 요소를 .content 하위로 이동 -->
         <div class="video">
           <video autoplay loop muted>
             <source
@@ -110,30 +107,22 @@
           transform: "translateY(-50%)",
         })
         .to(
-          ".intro_text > div",
+          ".intro_text1",
           {
             fontSize: 48,
+            onComplete: () => {
+              document.querySelector(".intro_text1").style.display = "none";
+              document.querySelector(".intro_text2").style.display = "block";
+            },
           },
           "text"
         );
-
       ScrollTrigger.create({
         animation: intro,
         trigger: ".intro",
         scrub: true,
         pin: true,
       });
-
-      // 비디오 크기 조정 부분 추가
-      // gsap.to(".video", {
-      //   width: 800,
-      //   height: 600,
-      //   scrollTrigger: {
-      //     trigger: ".intro",
-      //     start: "top top",
-      //     scrub: true,
-      //   },
-      // });
     </script>
   </body>
 </html>
