@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>문서</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style: none;
+    }
+    body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .v1_59, .main_visual_02, .main_visual_03 {
+      width: 100%;
+      height: 940px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+    .v1_59 {
+      background-image: url("../images/v1_59.png");
+      opacity: 1;
+    }
+    .main_visual_02 {
+      background-image: url("../images/main_visual_02.png");
+      opacity: 0; /* 초기에는 투명으로 설정 */
+    }
+    .main_visual_03 {
+      background-image: url("../images/main_visual_03.png");
+      opacity: 0; /* 초기에는 투명으로 설정 */
+    }
+    .boxwrap {
+      display: table;
+      table-layout: fixed;
+      width: 300%;
+      height: 100vh;
+    }
+    section {
+      display: table-cell;
+    }
+    section:first-child {
+      background: none; /* 배경 색상 제거 */
+    }
+    section:nth-child(2) {
+      background: none; /* 배경 색상 제거 */
+    }
+    section:nth-child(3) {
+      background: none; /* 배경 색상 제거 */
+    }
+    .page {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    .page li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+    }
+    .page li.on {
+      background: #000;
+    }
+  </style>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function () {
+      let cont = $("section");
+      $(".page li").eq(0).addClass("on");
+
+      $(".page li").click(function () {
+        let i = $(this).index();
+        $(".page li").removeClass("on");
+        $(this).addClass("on");
+
+        // 투명도 조절하여 이미지 전환
+        $(".v1_59, .main_visual_02, .main_visual_03").animate({ opacity: 0 }, 500);
+        $("." + cont.eq(i).attr("class")).animate({ opacity: 1 }, 500);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="boxwrap">
+    <div class="v1_59"></div>
+    <section></section>
+    <section class="main_visual_02"></section>
+    <section class="main_visual_03"></section>
+  </div>
+  <ul class="page">
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</body>
+</html>

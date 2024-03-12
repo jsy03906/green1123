@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="intro">
+      <div class="visual">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/main_visual_01.jpg" alt="main_visual_01" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/main_visual_02.jpg" alt="main_visual_01" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/main_visual_03.jpg" alt="main_visual_01" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="front">
+        <div class="tel">
+          <p>
+            <img src="images/top_call.png" alt="" /> 대표전화 02-2668-0171 |
+            051-704-0181
+          </p>
+        </div>
+        <div class="menu">
+          <div class="logo"><img src="images/logo_img_new2.png" alt="" /></div>
+          <div class="gnb">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">COMPANY</a></li>
+              <li><a href="#">PORTFOLIO</a></li>
+              <li><a href="#">ESTIMATE</a></li>
+              <li><a href="#">CUSTOMER CENTER</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text">
+          <h1>유일디자인</h1>
+          <h2>creative design</h2>
+          <p>
+            오랜 경험과 축적된 기술을 바탕으로 한 교육.사무.상업공간 전문
+            인테리어 그룹
+          </p>
+        </div>
+        <div class="scroll">
+          <p>scroll</p>
+        </div>
+      </div>
+      <!--front end-->
+    </div>
+    <!--intro end-->
+    <ul class="side">
+      <li><img src="images/icon_mail.png" alt="" /></li>
+      <li><img src="images/icon_tel.png" alt="" /></li>
+      <li><img src="images/quick_icon_03.png" alt="" /></li>
+    </ul>
+    <div class="portfolio">
+      <div class="inner">
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>
+                <img
+                  src="images/porfolio_slide (1).jpg"
+                  alt="main_visual_01"
+                /><span>하하나하나하낳</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide (1).jpg"
+                  alt="main_visual_01"
+                /><span>하하나하나하낳</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide (1).jpg"
+                  alt="main_visual_01"
+                /><span>하하나하나하낳</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide (1).jpg"
+                  alt="main_visual_01"
+                /><span>하하나하나하낳</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide (1).jpg"
+                  alt="main_visual_01"
+                /><span>하하나하나하낳</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide (1).jpg"
+                  alt="main_visual_01"
+                /><span>하하나하나하낳</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide (1).jpg"
+                  alt="main_visual_01"
+                /><span>하하나하나하낳</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide (1).jpg"
+                  alt="main_visual_01"
+                /><span>하하나하나하낳</span>
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "fade",
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+      var swiper1 = new Swiper(".mySwiper1", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>
