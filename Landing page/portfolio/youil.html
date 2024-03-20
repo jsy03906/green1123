@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>유일디자인</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=NanumGothic&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=nanumsquare&display=swap"
+    />
+    <link href="https://fonts.googleapis.com/css?family=NATS&display=swap" />
+    <link
+      href="https://fonts.googleapis.com/css?family=icTTBaramddaraR&display=swap"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/main1.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="intro">
+      <div class="visual">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/main_visual_01.jpg" alt="main_visual_01" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/main_visual_02.jpg" alt="main_visual_02" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/main_visual_03.jpg" alt="main_visual_03" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="front">
+        <div class="tel">
+          <p>
+            <img src="images/top_call.png" alt="" /> 대표전화 02-2668-0171 |
+            051-704-0181
+          </p>
+        </div>
+        <div class="menu">
+          <div class="logo"><img src="images/logo_img_new2.png" alt="" /></div>
+          <div class="gnb">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="images/company.pdf">COMPANY</a></li>
+              <li><a href="images/portfolio_concept 1.pdf">PORTFOLIO</a></li>
+              <li><a href="">ESTIMATE</a></li>
+              <li><a href="#">CUSTOMER CENTER</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text">
+          <h1>유일디자인</h1>
+          <h2>creative design</h2>
+          <p>
+            오랜 경험과 축적된 기술을 바탕으로 한 교육.사무.상업공간 전문
+            인테리어 그룹
+          </p>
+        </div>
+        <div class="scroll">
+          <p>scroll</p>
+        </div>
+      </div>
+      <!--front end-->
+    </div>
+    <!--intro end-->
+    <ul class="side">
+      <li><img src="images/icon_mail.png" alt="" /></li>
+      <li><img src="images/icon_tel.png" alt="" /></li>
+      <li><img src="images/quick_icon_03.png" alt="" /></li>
+    </ul>
+    <script>
+      $(function () {
+        // 'on' 클래스를 가진 이미지를 클릭 시
+        $("ul.side li img.on").click(function () {
+          var $this = $(this); // 클릭된 이미지 선택
+          // 이미지 변경
+          $this.attr("src", "mail.jpg");
+          // 1초 후에 다시 이미지 변경
+          setTimeout(function () {
+            $this.attr("src", "mail_1.jpg");
+          }, 1000);
+        });
+      });
+    </script>
+    <div class="portfolio">
+      <div class="content">
+        <p class="small-text">Youil Interior</p>
+        <p class="large-text">YOUIL PORTFOLIO</p>
+        <div class="vertical-line"></div>
+        <div class="split-text">
+          <div class="line"></div>
+          <div class="description">
+            <h1>Interior Design Group Youil Interior</h1>
+            <p>
+              클라이언트가 원하는 공간을 완성도 높게 구현해내면서 합리적인
+              견적을 제안하여 가장 만족할 수 있는 새로운 공간을 디자인합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="inner">
+        <!-- 메인 슬라이드 -->
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>
+                <img
+                  src="images/porfolio_slide_1.jpg"
+                  alt="main_visual_01"
+                /><span>여성스럽고 아늑한 식당 인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_2.jpg"
+                  alt="main_visual_01"
+                /><span>깔끔한 컴퓨터 학원 인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_3.jpg"
+                  alt="main_visual_01"
+                /><span>창작의 열정이 넘치는 공간 인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_4.jpg"
+                  alt="main_visual_01"
+                /><span>신소재로 깔끔하게 마감한 어학원인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_5.jpg"
+                  alt="main_visual_01"
+                /><span>깔끔한 화이트인테리어의 영어학원</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_6.jpg"
+                  alt="main_visual_01"
+                /><span>모던한 방송댄스학원 인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_7.jpg"
+                  alt="main_visual_01"
+                /><span>그레이 베이스 인테리어 학원</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_8.jpg"
+                  alt="main_visual_01"
+                /><span>모던 심플한 플랜테리어 자습실 인테리어</span>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                <img
+                  src="images/porfolio_slide_8.jpg"
+                  alt="main_visual_01"
+                /><span>여성스럽고 아늑한 식당 인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_9.jpg"
+                  alt="main_visual_01"
+                /><span>깔끔한 컴퓨터 학원 인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_10.jpg"
+                  alt="main_visual_01"
+                /><span>창작의 열정이 넘치는 공간 인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_11.jpg"
+                  alt="main_visual_01"
+                /><span>신소재로 깔끔하게 마감한 어학원인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_12.jpg"
+                  alt="main_visual_01"
+                /><span>깔끔한 화이트인테리어의 영어학원</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_13.jpg"
+                  alt="main_visual_01"
+                /><span>모던한 방송댄스학원 인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_14.jpg"
+                  alt="main_visual_01"
+                /><span>그레이 베이스 인테리어 학원</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_15.jpg"
+                  alt="main_visual_01"
+                /><span>모던 심플한 플랜테리어 자습실 인테리어</span>
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                <img
+                  src="images/porfolio_slide_16.jpg"
+                  alt="main_visual_01"
+                /><span>여성스럽고 아늑한 식당 인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_17.jpg"
+                  alt="main_visual_01"
+                /><span>깔끔한 컴퓨터 학원 인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_18.jpg"
+                  alt="main_visual_01"
+                /><span>창작의 열정이 넘치는 공간 인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_19.jpg"
+                  alt="main_visual_01"
+                /><span>신소재로 깔끔하게 마감한 어학원인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_20.jpg"
+                  alt="main_visual_01"
+                /><span>깔끔한 화이트인테리어의 영어학원</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_21.jpg"
+                  alt="main_visual_01"
+                /><span>모던한 방송댄스학원 인테리어</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_22.jpg"
+                  alt="main_visual_01"
+                /><span>그레이 베이스 인테리어 학원</span>
+              </p>
+              <p>
+                <img
+                  src="images/porfolio_slide_23.jpg"
+                  alt="main_visual_01"
+                /><span>모던 심플한 플랜테리어 자습실 인테리어</span>
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var swiper = new Swiper(".mySwiper1", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+        autoplay: true,
+        speed: 1000,
+      });
+    </script>
+    <!-- <div class="portfolio">
+      <div class="content">
+        <p class="small-text">Youil Interior</p>
+        <p class="large-text">YOUIL PORTFOLIO</p>
+        <div class="vertical-line"></div>
+        <div class="split-text">
+          <div class="line"></div>
+          <div class="description">
+            <h1>Interior Design Group Youil Interior</h1>
+            <p>
+              클라이언트가 원하는 공간을 완성도 높게 구현해내면서 합리적인 견적을 제안하여 가장 만족할 수 있는 새로운 공간을 디자인합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+   <div class="portfolio">
+      <div class="content">
+        <p class="small-text">Youil Interior</p>
+        <p class="large-text">YOUIL PORTFOLIO</p>
+        <div class="vertical-line"></div>
+        <div class="split-text">
+          <div class="line"></div>
+          <div class="description">
+            <h1>Interior Design Group Youil Interior</h1>
+            <p>
+              클라이언트가 원하는 공간을 완성도 높게 구현해내면서 합리적인 견적을 제안하여 가장 만족할 수 있는 새로운 공간을 디자인합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="Interiorsection">
+      <div class="content_1">
+        <p class="small-text_1">Youil Introduction</p>
+        <h1>유일디자인 인테리어 & 건축</h1>
+        <div class="vertical-line_1"></div>
+        <p class="Large-text_1">공장직영 인테리어전문 제조업체 유일디자인</p>
+        <div class="line_1"></div>
+        <div class="description_1"></div>
+        <p>
+          유일디자인은 제조업을 바탕으로 오랜 경험과 전문적인 지식을 겸비한
+          전문가들로 구성 되어 있으며 제조 개념의 인테리어를 최소비용으로 시공
+          연출하고 있습니다.<br />
+          저희 디자이너들은 기능성, 심미성을 모두 만족시키는 완벽한 공간 연출을
+          위해 최선의 노력을 다하고 있습니다.<br />
+          유일디자인은 축적된 기술을 바탕으로 학원, 병원, 상업공간, 주거공간,
+          고시원, 종교시설 등을 전문으로 시공하는 회사입니다.
+        </p>
+      </div>
+    </div>
+    <div class="parent">
+      <div class="Interior"></div>
+      <div class="Architecture"></div>
+    </div>
+    <div class="content">
+      <p class="large-text">YOUIL PORTFOLIO</p>
+      <div class="vertical-line"></div>
+      <div class="split-text">
+        <div class="line"></div>
+        <div class="description">
+          <h1>Interior Design Group Youil Interior</h1>
+          <p>
+            클라이언트가 원하는 공간을 완성도 높게 구현해내면서 합리적인 견적을
+            제안하여 가장 만족할 수 있는 새로운 공간을 디자인합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 페이지 맨 위로 스크롤하는 버튼 -->
+    <!-- <button id="scrollToTop" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button> -->
+    <button id="scrollToTop" onclick="scrollToTop()">▲</button>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      // Swiper 스크립트 초기화
+      var swiper = new Swiper(".mySwiper", {
+        effect: "fade",
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+      var swiper1 = new Swiper(".mySwiper1", {
+        pagination: {
+          el: ".swiper-pagination1",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        pagination: {
+          el: ".swiper-pagination2",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+      var swiper3 = new Swiper(".mySwiper3", {
+        pagination: {
+          el: ".swiper-pagination3",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+      var swiper4 = new Swiper(".mySwiper4", {
+        pagination: {
+          el: ".swiper-pagination3",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+      var swiperr5 = new Swiper(".mySwiper5", {
+        pagination: {
+          el: ".swiper-pagination3",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+
+      // 스와이퍼 클릭 이벤트 핸들러
+      function swiperScriptClicked() {
+        swiper1.slideNext(); // 첫 번째 스와이퍼 다음 슬라이드로 이동
+        swiper2.slideNext(); // 두 번째 스와이퍼 다음 슬라이드로 이동
+        swiper3.slideNext(); // 세 번째 스와이퍼 다음 슬라이드로 이동
+      }
+    </script>
+
+    <script>
+      // JavaScript 코드
+
+      var lastScrollTop = 0;
+
+      window.addEventListener("wheel", function (event) {
+        var scroll = document.querySelector(".scroll");
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (st > lastScrollTop) {
+          // 아래로 스크롤
+          scroll.style.transform = "translate(-50%, 0)";
+        } else {
+          // 위로 스크롤
+          scroll.style.transform = "translate(-50%, -100%)";
+        }
+
+        lastScrollTop = st <= 0 ? 0 : st;
+      });
+    </script>
+    <script>
+      // 스크롤 할 때마다 실행되는 함수
+      window.addEventListener("scroll", function () {
+        // 스크롤 위치 가져오기
+        var scrollY = window.scrollY || window.pageYOffset;
+
+        // ul 요소 가져오기
+        var side = document.querySelector(".side");
+
+        // ul 요소의 top 위치 설정
+        side.style.top = scrollY + "px";
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      // Swiper 스크립트 초기화
+      var swiper1 = new Swiper(".mySwiper1", {
+        pagination: {
+          el: ".swiper-pagination1",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+
+      var swiper2 = new Swiper(".mySwiper2", {
+        pagination: {
+          el: ".swiper-pagination2",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+
+      var swiper3 = new Swiper(".mySwiper3", {
+        pagination: {
+          el: ".swiper-pagination3",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+    <script>
+      $(function () {
+        $(".share-facebook").click(function () {
+          window.open(
+            $(this).attr("href"),
+            "win_facebook",
+            "menubar=1,resizable=1,width=600,height=400"
+          );
+          return false;
+        });
+
+        $(".share-twitter").click(function () {
+          window.open(
+            $(this).attr("href"),
+            "win_twitter",
+            "menubar=1,resizable=1,width=600,height=350"
+          );
+          return false;
+        });
+
+        $(".share-googleplus").click(function () {
+          window.open(
+            $(this).attr("href"),
+            "win_googleplus",
+            "menubar=1,resizable=1,width=600,height=600"
+          );
+          return false;
+        });
+      });
+    </script>
+    <!-- 웹 페이지 내용 -->
+
+    <!-- JavaScript 코드 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript 코드 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 페이지 맨 위로 스크롤하는 버튼 -->
+    <button id="scrollToTop" onclick="scrollToTop()">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript 코드 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // 스크롤 이벤트를 감지하여 처리합니다.
+        $(window).scroll(function () {
+          // 현재 스크롤 위치를 가져옵니다.
+          var scrollPosition = $(this).scrollTop();
+
+          // 스크롤 위치가 일정 값 이상이면 버튼을 보여줍니다.
+          if (scrollPosition > 300) {
+            $("#scrollToTop").fadeIn();
+          } else {
+            $("#scrollToTop i").fadeOut();
+          }
+        });
+      });
+
+      // 페이지 맨 위로 스크롤하는 함수
+      function scrollToTop() {
+        $("html, body").animate(
+          {
+            scrollTop: 0,
+          },
+          "slow"
+        );
+      }
+    </script>
+  </body>
+</html>
