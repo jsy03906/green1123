@@ -1,0 +1,153 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.intro {
+  position: relative;
+  height: 100vh;
+}
+.visual {
+  width: 100%;
+}
+
+.mySwiper .swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper .swiper-slide img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.mySwiper .swiper-pagination-bullets {
+  bottom: 150px;
+}
+.mySwiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+.mySwiper .swiper-pagination-bullet-active {
+  background: #fff;
+}
+.front {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 1170px;
+  height: 100vh;
+  z-index: 1;
+}
+.front .tel {
+  text-align: right;
+}
+.front .tel p {
+  display: inline-block;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+.front .menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gnb ul {
+  display: flex;
+}
+.gnb ul li {
+  margin: 10px;
+}
+.gnb ul li a {
+  color: #fff;
+}
+.gnb ul li a:hover {
+  color: yellow;
+}
+.text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.side {
+  position: absolute;
+  right: 50px;
+  top: 20%;
+  z-index: 10;
+}
+.side li {
+  width: 50px;
+  height: 50px;
+  border-bottom: 1px solid #858585;
+  background: #000;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+.side li img {
+  vertical-align: middle;
+}
+.scroll {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: #fff;
+}
+.scroll::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  z-index: 1;
+}
+.portfolio {
+  width: 100%;
+  background-color: #262523;
+}
+.portfolio .inner {
+  width: 1170px;
+  margin: 0 auto;
+}
+.mySwiper1 .swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.mySwiper1 .swiper-slide p {
+  display: flex;
+  flex-direction: column;
+}
+.mySwiper1 .swiper-slide img {
+  width: 250px;
+}
